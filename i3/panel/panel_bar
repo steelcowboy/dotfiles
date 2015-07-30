@@ -1,0 +1,49 @@
+#! /bin/sh
+#
+# Example panel for LemonBoy's bar
+
+. panel_colors
+
+PADDING="  "
+
+while read -r line ; do
+	case $line in
+		D*)
+			# date output
+			date="$PADDING${line#?}$PADDING"
+			;;
+		R*)
+			# music info
+			music="%{B$COLOR_FOCUSED_OCCUPIED_BG}%{F$COLOR_FOCUSED_OCCUPIED_FG}$PADDING${line#?}$PADDING%{F-}%{B-}"
+			;;
+		C*)
+			# clock output
+			clock="$PADDING${line#?}$PADDING"
+			;;
+		B*)
+			# battery status
+			batt="$PADDING${line#?}$PADDING"
+			;;
+
+		T*)
+			# xtitle output
+			title="${line#?}$PADDING$PADDING"
+			;;
+
+		S*)
+			# system info button
+			sysinfo="${line#?}$PADDING$PADDING"
+			;;
+
+
+		V*)
+			# alsa volume
+			volume="$PADDING${line#?}$PADDING"
+			;;
+		L*)
+			# wifi link
+			wifi="$PADDING${line#?}$PADDING"
+			;;
+	esac
+	printf "%s\n" "%{l}${music}%{r}${title}${sysinfo}${wifi}${volume}${date}${batt}${clock}"
+done

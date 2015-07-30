@@ -1,0 +1,6 @@
+setlocal textwidth=80 
+setlocal wrapmargin=0
+
+syntax on
+filetype indent plugin on
+set background=dark

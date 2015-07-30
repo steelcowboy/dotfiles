@@ -1,0 +1,72 @@
+#! /bin/zsh
+
+PANEL_FIFO=/tmp/panel-fifo
+PANEL_HEIGHT=25
+PANEL_FONT_FAMILY="Droid Sans:size=10"
+#PANEL_FONT_FAMILY="Cantarell:size=9"
+#PANEL_FONT_FAMILY="Cantarell:size=9"
+ICON_FONT="FontAwesome:size=12"
+#ICON_FONT2="fontcustom:size=11"
+# export PANEL_FIFO PANEL_HEIGHT PANEL_FONT_FAMILY
+
+if [ $(pgrep -cx panel) -gt 1 ] ; then
+	printf "%s\n" "The panel is already running." >&2
+	exit 1
+fi
+
+trap 'trap - TERM; kill 0' INT TERM QUIT EXIT
+
+[ -e "$PANEL_FIFO" ] && rm "$PANEL_FIFO"
+mkfifo "$PANEL_FIFO"
+
+xtitle -sf 'T%s' -t 50 > "$PANEL_FIFO" &
+
+# clock
+while true;
+	do 
+		echo 'C\uf017 ' $(date +"%H:%M");
+	sleep 5;
+done > "$PANEL_FIFO" &
+
+# battery
+while true;
+do
+	echo 'B %{A:batt.sh:} \uf0e7 %{A}' 
+	sleep 30 
+done > $PANEL_FIFO &
+
+# date
+while true;
+do echo "D %{A:dzen-cal:} \uf073  %{A}" $(date +'%b %d')
+	sleep 5
+done > $PANEL_FIFO &
+
+# system info
+while true;
+do echo "S %{A:sysconky.sh:} \uf109 %{A}"
+	sleep 30
+done > $PANEL_FIFO &
+
+# wifi
+while true;
+do
+	echo L'%{A:dzen-wifi:}\uf1eb %{A}'  
+	sleep 30
+done > $PANEL_FIFO &
+
+# conky
+conky > $PANEL_FIFO &
+
+# volume
+while true;
+do 
+VOLUME=$(amixer get Master | egrep -o "[0-9]+%" | head -n 1)
+	echo V'\uf027  ' $VOLUME 
+	sleep 1
+done > $PANEL_FIFO &
+
+. panel_colors
+
+cat "$PANEL_FIFO" | panel_bar | lemonbar -g x$PANEL_HEIGHT -f  "$PANEL_FONT_FAMILY" -f "$ICON_FONT" -F "$COLOR_FOREGROUND" -B "$COLOR_BACKGROUND" -u 2 | zsh &
+
+wait

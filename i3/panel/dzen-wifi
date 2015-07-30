@@ -1,0 +1,7 @@
+WIFI_SSID=$(iw wlp3s0 link | grep 'SSID' | sed 's/SSID: //' | sed 's/\t//')
+
+echo "  $WIFI_SSID" | dzen2 -fg '#FFFFFF' \
+-bg '#FF3D00' -fn 'xft:Droid Sans:size=10' \
+-x "1100" -y "5" -w "100" -e 'button1=exit;button3=exec:cmst' -ta l -p 5
+
+

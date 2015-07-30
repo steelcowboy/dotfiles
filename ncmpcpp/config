@@ -1,0 +1,17 @@
+media_library_primary_tag = album_artist
+ignore_leading_the = "yes"
+
+# Colors
+discard_colors_if_item_is_selected = "yes"
+header_window_color = "cyan"
+volume_color = "cyan"
+state_line_color = "yellow"
+state_flags_color = "cyan"
+main_window_color = "default"
+color1 = "default"
+color2 = "cyan"
+main_window_highlight_color = "cyan"
+progressbar_color = "yellow"
+statusbar_color = "yellow"
+active_column_color = "yellow"
+visualizer_color = "cyan"

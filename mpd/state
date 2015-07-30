@@ -1,0 +1,26 @@
+sw_volume: 1
+audio_device_state:1:pulse audio
+state: play
+current: 10
+time: 120.093000
+random: 0
+repeat: 0
+single: 0
+consume: 0
+crossfade: 0
+mixrampdb: 0.000000
+mixrampdelay: -1.000000
+playlist_begin
+0:beatallica/01-beatallica-the_battery_of_jaymz_and_yoko.mp3
+1:beatallica/02-beatallica-masterful_mystery_tour.mp3
+2:beatallica/03-beatallica-fuel_on_the_hill.mp3
+3:beatallica/04-beatallica-and_im_evil.mp3
+4:beatallica/05-beatallica-everybodys_got_a_ticket_to_ride_except_for_me_and_my_lightning.mp3
+5:beatallica/06-beatallica-running_for_your_life.mp3
+6:beatallica/07-beatallica-the_thing_that_should_not_let_it_be.mp3
+7:beatallica/08-beatallica-hero_of_the_day_tripper.mp3
+8:beatallica/09-beatallica-got_to_get_you_trapped_under_ice.mp3
+9:beatallica/10-beatallica-ill_just_bleed_your_face.mp3
+10:beatallica/11-beatallica-i_want_to_choke_your_band.mp3
+11:beatallica/12-beatallica-tomorrow_never_comes.mp3
+playlist_end
