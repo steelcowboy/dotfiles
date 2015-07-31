@@ -133,8 +133,6 @@ mode "resize" {
 
 bindsym $mod+r mode "resize"
 
-bindsym $mod+z+Left workspace prev
-bindsym $mod+z+Right workspace next
 bindsym $mod+Escape exec oblogout
 
 # Media Keys
@@ -164,6 +162,7 @@ for_window [class="^.*"] border pixel 0
 for_window [instance="crx_nckgahadagoaajjgafhacjanaoiihapd"] floating enabled  
 for_window [title="Openbox Logout"] floating enabled
 for_window [title="Pushbullet"] floating enabled
+for_window [title="System upgrade - kalu"] floating enabled
 
 # hiding borders
 
@@ -177,6 +176,9 @@ exec --no-startup-id nitrogen --restore
 exec --no-startup-id /opt/urserver/urserver --daemon 
 exec --no-startup-id touchegg
 exec --no-startup-id xcompmgr
+exec --no-startup-id kalu
+exec --no-startup-id connman-ui-gtk
+
 # Tweaks
 
 gaps inner 10
@@ -190,3 +192,25 @@ set $bgcolor            #202A2F
 client.focused              $fgcolor $fgcolor $bgcolor $fgcolor
 client.focused_inactive     $bgcolor $bgcolor $fgcolor $bgcolor
 client.unfocused            $bgcolor $bgcolor $fgcolor $bgcolor
+
+# i3bar
+bar {
+    status_command i3status
+    position bottom
+    
+    mode hide
+    hidden_state hide
+    modifier Mod1
+
+    font pango:Droid Sans Mono 10
+
+    colors {
+        background #FF3D00
+        statusline #ffffff
+
+	focused_workspace  #FF3D00 #FF3D00 #ffffff
+        active_workspace   #FF3D00 #FF3D00 #ffffff
+        inactive_workspace #FF3D00 #DD2C00 #888888
+        urgent_workspace   #2f343a #900000 #ffffff
+    }
+}
