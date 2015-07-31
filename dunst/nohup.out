@@ -1,0 +1,10 @@
+
+(kalu:29692): GLib-GObject-WARNING **: The property GtkSettings:gtk-button-images is deprecated and shouldn't be used anymore. It will be removed in a future version.
+
+(kalu:29692): GLib-GObject-CRITICAL **: g_object_set_data: assertion 'G_IS_OBJECT (object)' failed
+
+(kalu:29692): GLib-GObject-CRITICAL **: g_object_set_data: assertion 'G_IS_OBJECT (object)' failed
+
+(kalu:29692): GLib-GObject-CRITICAL **: g_object_set_data: assertion 'G_IS_OBJECT (object)' failed
+
+(kalu:29692): GLib-GObject-CRITICAL **: g_object_set_data: assertion 'G_IS_OBJECT (object)' failed
