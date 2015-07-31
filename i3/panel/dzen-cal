@@ -15,6 +15,6 @@ YEAR=`date +'%Y'`
 # current month, highlight header and today
 cal | sed -re "s/^(.*[A-Za-z][A-Za-z]*.*)$/^fg(#FFFFFF)^bg(#FF3D00)\1/;
 s/(^|[ ])($TODAY)($|[ ])/\1^bg(#DD2C00)^fg(#F6F9FF)\2^fg(#FFFFFF)^bg(#FF3D00)\3/"
-) | dzen2 -fg '#FFFFFF' -bg '#FF3D00' -fn 'xft:Droid Sans Mono:size=11' -x "1155" -y \
+) | dzen2 -fg '#FFFFFF' -bg '#FF3D00' -fn 'xft:Droid Sans Mono:size=10' -x "1155" -y \
 "30" -w "160"  -l 7 -e 'onstart=uncollapse;button1=exit;button3=exit' -p 5
 
