@@ -15,11 +15,18 @@ for i, song in enumerate(playlist):
     if song['title'] == curtitle:
         pos = i
         break
+
 if pos is not None:
-    #print map(operator.itemgetter('title'), playlist[pos+1:pos+6])
-    for x in range(1,6):
+    
+    remain = total - pos
+    if remain > 6:
+        y = 6
+    else:
+        y = remain
+
+    for x in range(1,y):
         title = operator.itemgetter('title')(playlist[pos+x])
-        title = (data[:38] + '..') if len(title) > 39 else title
+        title = (title[:26] + '...') if len(title) > 30 else title
         print "%i/%i " % (pos+x+1, total) + title
 
         
