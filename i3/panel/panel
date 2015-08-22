@@ -28,13 +28,6 @@ while true;
 	sleep 5;
 done > "$PANEL_FIFO" &
 
-# battery
-while true;
-do
-	echo 'B %{A:batt.sh:} \uf0e7 %{A}' 
-	sleep 30 
-done > $PANEL_FIFO &
-
 # date
 while true;
 do echo "D %{A:dzen-cal:} \uf073  %{A}" $(date +'%b %d')
