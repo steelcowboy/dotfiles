@@ -26,7 +26,7 @@ if pos is not None:
 
     for x in range(1,y):
         title = operator.itemgetter('title')(playlist[pos+x])
-        title = (title[:26] + '...') if len(title) > 30 else title
-        print "%i/%i " % (pos+x+1, total) + title
+        title = (title[:26] + '...') if len(title) > 29 else title
+        print "%i/%i " % (pos+x+1, total) + title 
 
         
