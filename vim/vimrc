@@ -1,5 +1,6 @@
 setlocal textwidth=80 
 setlocal wrapmargin=0
+set paste
 
 syntax on
 filetype indent plugin on
