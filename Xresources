@@ -4,20 +4,14 @@
 ! Compile xft: Turn on/off double-buffering for xft (default enabled).  On some card/driver combination enabling it slightly decreases
 ! URxvt*buffered: boolean
 
-! Create the window with the specified X window geometry [default 80x24]; option -geometry.
-! URxvt*geometry: geom
-
 ! Use the specified colour as the windows background colour [default White]; option -bg.
-URxvt*background: Black 
+!URxvt*background: Black 
 
 ! Use the specified colour as the windows foreground colour [default Black]; option -fg.
-URxvt*foreground: White
+!URxvt*foreground: White
 
 ! Use the specified colour for the colour value n, where 0-7 corresponds to low-intensity (normal) colours and 8-15 corresponds to
 ! URxvt*colorn: colour
-
-! 
-! URxvt*colorBD: colour
 
 ! Use the specified colour to display bold or italic characters when the foreground colour is the default. If font styles are not
 ! URxvt*colorIT: colour
@@ -180,93 +174,48 @@ URxvt*scrollTtyKeypress: true
 ! Mouse pointer background colour.
 ! URxvt*pointerColor2: colour
 
-! Specifies number of seconds before blanking the pointer [default 2]. Use a large number (e.g. 987654321) to effectively disable the
-! URxvt*pointerBlankDelay: number
-
-! The string to send when the backspace key is pressed. If set to DEC or unset it will send Delete (code 127) or, with control,
-! URxvt*backspacekey: string
-
-! The string to send when the delete key (not the keypad delete key) is pressed. If unset it will send the sequence traditionally
-! URxvt*deletekey: string
-
-! The characters used as delimiters for double-click word selection (whitespace delimiting is added automatically if resource is
-! URxvt*cutchars: string
-
-! 
-! URxvt*{|}
-
-! OverTheSpot, OffTheSpot, Root; option -pt.
-! URxvt*preeditType: style
-
-! name of inputMethod to use; option -im.
-! URxvt*inputMethod: name
-
-! The locale to use for opening the IM. You can use an "LC_CTYPE" of e.g.  "de_DE.UTF-8" for normal text processing but "ja_JP.EUC-JP"
-! URxvt*imLocale: name
-
-! Specify the font-set used for XIM styles "OverTheSpot" or "OffTheSpot". It must be a standard X font set (XLFD patterns separated by
-! URxvt*imFont: fontset
-
-! Change the meaning of triple-click selection with the left mouse button. Instead of selecting a full line it will extend the
-! URxvt*tripleclickwords: boolean
-
-! Enables "insecure" mode. Rxvt-unicode offers some escape sequences that echo arbitrary strings like the icon name or the locale.
-! URxvt*insecure: boolean
-
-! Set the key to be interpreted as the Meta key to: alt, meta, hyper, super, mod1, mod2, mod3, mod4, mod5; option -mod.
-! URxvt*modifier: modifier
-
-! Specify the reply rxvt-unicode sends to the shell when an ENQ (control-E) character is passed through. It may contain escape values
-! URxvt*answerbackString: string
-
-! Turn on/off secondary screen (default enabled).
-! URxvt*secondaryScreen: boolean
-
-! Turn on/off secondary screen scroll (default enabled). If this option is enabled, scrolls on the secondary screen will change the
-! URxvt*secondaryScroll: boolean
-
-! Turn on/off hold window after exit support. If enabled, urxvt will not immediately destroy its window when the program executed
-! URxvt*hold: boolean
-
 ! Sets the working directory for the shell (or the command specified via -e). The path must be an absolute path and it must exist for
 ! URxvt*chdir: path
-
-! Compile frills: Associate action with keysym sym. The intervening resource name keysym. cannot be omitted.
-! URxvt*keysym.sym: action
-
-! URxvt*perl-ext-common: string
-
-! Comma-separated list(s) of perl extension scripts (default: "default") to use in this terminal instance; option -pe.
-! URxvt*perl-ext: string
-
-! Perl code to be evaluated when all extensions have been registered. See the urxvtperl(3) manpage.
-! URxvt*perl-eval: string
-
-! Colon-separated list of additional directories that hold extension scripts. When looking for perl extensions, urxvt will first look
-! URxvt*perl-lib: path
-
-! Additional selection patterns, see the urxvtperl(3) manpage for details.
-! URxvt*selection.pattern-idx: perl-regex
-
-! Selection auto-transform patterns, see the urxvtperl(3) manpage for details.
-! URxvt*selection-autotransform.idx: perl-transform
-
-! This resource is deprecated and will be removed. Use a keysym resource instead, e.g.:
-! URxvt*searchable-scrollback: keysym *DEPRECATED*
 
 ! Specifies the program to be started with a URL argument. Used by the "selection-popup" and "matcher" perl extensions.
 ! URxvt*url-launcher: string
 
-! Compile frills: Sets the WM_TRANSIENT_FOR property to the given window id.
-! URxvt*transient-for: windowid
+URxvt*background: #002b36
+!URxvt*foreground: #657b83
+!!*fading: 40
+!URxvt*fadeColor: #002b36
+URxvt*cursorColor: #93a1a1
+!URxvt*pointerColorBackground: #586e75
+!URxvt*pointerColorForeground: #93a1a1
 
-! Compile frills: Sets override-redirect for the terminal window, making it almost invisible to window managers; option
-! URxvt*override-redirect: boolean
+!! black dark/light
+!URxvt*color0: #073642
+!URxvt*color8: #002b36
 
-! Turn on/off ISO 14755 (default enabled).
-! URxvt*iso14755: boolean
+!! red dark/light
+!URxvt*color1: #dc322f
+!URxvt*color9: #cb4b16
 
-! Turn on/off ISO 14755 5.2 mode (default enabled).
-! URxvt*iso14755_52: boolean
+!! green dark/light
+!URxvt*color2: #859900
+!URxvt*color10: #586e75
 
+!! yellow dark/light
+!URxvt*color3: #b58900
+!URxvt*color11: #657b83
 
+!! blue dark/light
+!URxvt*color4: #268bd2
+!URxvt*color12: #839496
+
+!! magenta dark/light
+!URxvt*color5: #d33682
+!URxvt*color13: #6c71c4
+
+!! cyan dark/light
+!URxvt*color6: #2aa198
+!URxvt*color14: #93a1a1
+
+!! white dark/light
+!URxvt*color7: #eee8d5
+!URxvt*color15: #fdf6e3
