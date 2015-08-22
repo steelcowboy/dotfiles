@@ -45,5 +45,5 @@ while read -r line ; do
 			wifi="$PADDING${line#?}$PADDING"
 			;;
 	esac
-	printf "%s\n" "%{l}${music}%{r}${title}${sysinfo}${wifi}${volume}${date}${batt}${clock}"
+	printf "%s\n" "%{l}${music}%{r}${title}${sysinfo}${wifi}${volume}${date}${clock}"
 done
