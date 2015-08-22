@@ -5,7 +5,7 @@
 export XDG_CONFIG_HOME="$HOME/.config"
 
 # PATH
-export PATH=$PATH:$HOME/.gem/ruby/2.2.0/bin:$HOME/.config/i3/panel
+export PATH=$PATH:/sbin:$HOME/.gem/ruby/2.2.0/bin:$HOME/.config/i3/panel
 export PANEL_FIFO=/tmp/panel_fifo 
 
 # Path to your oh-my-zsh installation.
@@ -69,9 +69,9 @@ source $ZSH/oh-my-zsh.sh
 
 # Preferred editor for local and remote sessions
  if [[ -n $SSH_CONNECTION ]]; then
-   export EDITOR='nano'
+   export EDITOR='vim'
  else
-   export EDITOR='nano'
+   export EDITOR='vim'
  fi
 
 # Compilation flags
@@ -100,14 +100,11 @@ alias paccount='pacman -Q | wc -l'
 
 # Fun
 alias nyantel="telnet nyancat.dakko.us"
-mkcd () { 
-  mkdir "$1" 
-  cd "$1" 
-}
+alias trekkin="mplayer $(youtube-dl --prefer-insecure -g -f140 FCARADb9asE)"
 
 # File management
-alias sitesync='rsync -avz --progress --exclude-from '/home/steelcowboy/sitesync/exclude.txt' lavacake:/srv/http/* /srv/http/'
-alias sitepush='rsync -avz --progress --exclude-from '/home/steelcowboy/sitesync/aexclude.txt' /srv/http/* lavacake:/srv/http/'
+alias sitesync='rsync -avz --progress --exclude-from '/home/steelcowboy/sitesync/exclude.txt' ssh.steelcowboy.me:/srv/http/* /srv/http/'
+alias sitepush='rsync -avz --progress --exclude-from '/home/steelcowboy/sitesync/aexclude.txt' /srv/http/* ssh.steelcowboy.me:/srv/http/'
 alias delpem='sudo chown -R steelcowboy:deluge /srv/deluge/Downloads/Music'
 
 # Chrome apps
@@ -119,11 +116,21 @@ alias fbvid='mplayer -vo fbdev2 -fs -zoom -xy 1600'
 alias screen-on='xset -dpms; xset s off'
 alias nano="echo 'How about vim?'; false"
 alias speedtest="wget -O /dev/null http://speedtest.wdc01.softlayer.com/downloads/test10.zip"
+alias sshome="ssh ssh.steelcowboy.me"
+mkcd () {
+  mkdir "$1"
+  cd "$1"
+}
+
+sysenable () {
+	sudo systemctl enable "$1"
+	sudo systemctl start "$1"
+}
 
 # Default options
 alias xclip="xclip -selection c"
 alias pgrep="nocorrect pgrep"
 
-# eval $(keychain --eval --agents ssh -Q --quiet id_rsa)
+[ $DISPLAY ] && eval $(keychain --eval --agents ssh -Q --quiet id_rsa)
 
 
