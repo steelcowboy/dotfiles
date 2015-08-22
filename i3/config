@@ -105,8 +105,7 @@ bindsym $mod+Shift+c reload
 # restart i3 inplace (preserves your layout/session, can be used to upgrade i3)
 bindsym $mod+Shift+r restart
 # exit i3 (logs you out of your X session)
-bindsym $mod+Shift+e exec "i3-nagbar -t warning -m 'You pressed the exit shortcut. Do you really want to exit i3? This will end your X session.' -b 'Yes, exit i3' 'i3-msg exit'"
-
+bindsym $mod+Shift+e exec wm-quit
 # resize window (you can also use the mouse for that)
 mode "resize" {
         # These bindings trigger as soon as you enter the resize mode
@@ -129,6 +128,9 @@ bindsym $mod+r mode "resize"
 
 bindsym $mod+Escape exec oblogout
 
+# Special actions
+bindsym $mod+Shift+p exec killall panel && nohup panel >&/dev/null &
+
 # Media Keys
 
 bindsym XF86AudioRaiseVolume exec amixer -D pulse set Master 5%+ unmute
@@ -149,6 +151,7 @@ bindsym XF86TaskPane exec keyboard
 bindsym XF86MonBrightnessDown exec xbacklight -dec 10
 bindsym XF86MonBrightnessUp exec xbacklight -inc 10
 bindsym XF86ScreenSaver exec i3lock -d -i /home/steelcowboy/Pictures/shield.png 
+bindsym XF86TouchpadToggle exec synclient TouchpadOff=$(synclient -l | grep -c 'TouchpadOff.*=.*0')
 
 # Window Rules
 
@@ -157,6 +160,7 @@ for_window [instance="crx_nckgahadagoaajjgafhacjanaoiihapd"] floating enabled
 for_window [title="Openbox Logout"] floating enabled
 for_window [title="Pushbullet"] floating enabled
 for_window [title="System upgrade - kalu"] floating enabled
+for_window [title="Session - Shutter"] floating enabled
 
 # hiding borders
 
@@ -170,8 +174,8 @@ exec --no-startup-id nitrogen --restore
 exec --no-startup-id /opt/urserver/urserver --daemon 
 exec --no-startup-id touchegg
 exec --no-startup-id compton -b --vsync opengl
-exec --no-startup-id kalu
-exec --no-startup-id connman-ui-gtk
+#exec --no-startup-id kalu
+#exec --no-startup-id connman-ui-gtk
 
 # Tweaks
 
