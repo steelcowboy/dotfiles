@@ -3,3 +3,4 @@ mpd/log
 mpd/pid
 mpd/state
 mpd/sticker.sql
+mpd/playlists
