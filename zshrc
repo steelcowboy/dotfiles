@@ -1,12 +1,12 @@
 # Autojump sourcing
- . /etc/profile.d/autojump.zsh
+. /etc/profile.d/autojump.zsh
 
 # Config dir
- export XDG_CONFIG_HOME="$HOME/.config"
+export XDG_CONFIG_HOME="$HOME/.config"
 
 # PATH
- export PATH=$PATH:/sbin:$HOME/.gem/ruby/2.2.0/bin:$HOME/.config/i3/panel
- export PANEL_FIFO=/tmp/panel_fifo 
+export PATH=$PATH:/sbin:$HOME/.gem/ruby/2.2.0/bin:$HOME/bin:$HOME/.config/i3/panel
+export PANEL_FIFO=/tmp/panel_fifo 
 
 # Path to your oh-my-zsh installation.
 export ZSH=$HOME/.oh-my-zsh
