@@ -8,7 +8,7 @@
 !URxvt*background: Black 
 
 ! Use the specified colour as the windows foreground colour [default Black]; option -fg.
-!URxvt*foreground: White
+URxvt*foreground: White
 
 ! Use the specified colour for the colour value n, where 0-7 corresponds to low-intensity (normal) colours and 8-15 corresponds to
 ! URxvt*colorn: colour
