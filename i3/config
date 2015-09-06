@@ -130,6 +130,7 @@ bindsym $mod+Escape exec oblogout
 
 # Special actions
 bindsym $mod+Shift+p exec killall panel && nohup panel >&/dev/null &
+bindsym $mod+Shift+v exec netsurf ~/Documents/vimqrc.html
 
 # Media Keys
 
