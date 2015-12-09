@@ -2,7 +2,7 @@
 #
 # Example panel for LemonBoy's bar
 
-. panel_colors
+. panel_colors_$1
 
 PADDING="  "
 
@@ -14,7 +14,7 @@ while read -r line ; do
 			;;
 		R*)
 			# music info
-			music="%{B$COLOR_FOCUSED_OCCUPIED_BG}%{F$COLOR_FOCUSED_OCCUPIED_FG}$PADDING${line#?}$PADDING%{F-}%{B-}"
+			music="%{B#FF$color_sec_bg}%{F#FF$color_sec_fg}$PADDING${line#?}$PADDING%{F-}%{B-}"
 			;;
 		C*)
 			# clock output

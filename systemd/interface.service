@@ -1,0 +1,9 @@
+[Unit]
+Description=Run the interface script 
+
+[Service]
+Type=oneshot
+KillMode=none
+Environment="DISPLAY=:0"
+Environment="PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/home/steelcowboy/.config/i3/panel:/home/steelcowboy/bin"
+ExecStart=/home/steelcowboy/bin/interface.sh
