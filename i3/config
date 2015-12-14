@@ -170,13 +170,13 @@ hide_edge_borders none
 # Startup programs
 
 exec --no-startup-id panel
-exec --no-startup-id onboard 
-exec --no-startup-id nitrogen --restore
-exec --no-startup-id /opt/urserver/urserver --daemon 
-exec --no-startup-id touchegg
+#exec --no-startup-id onboard 
+#exec --no-startup-id nitrogen --restore
+#exec --no-startup-id /opt/urserver/urserver --daemon 
+#exec --no-startup-id touchegg
 exec --no-startup-id compton -b --vsync opengl
 #exec --no-startup-id kalu
-#exec --no-startup-id connman-ui-gtk
+exec --no-startup-id nm-applet
 
 # Tweaks
 
