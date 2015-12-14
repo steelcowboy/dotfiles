@@ -19,7 +19,7 @@ trap 'trap - TERM; kill 0' INT TERM QUIT EXIT
 [ -e "$PANEL_FIFO" ] && rm "$PANEL_FIFO"
 mkfifo "$PANEL_FIFO"
 
-xtitle -sf 'T%s' -t 50 > "$PANEL_FIFO" &
+#xtitle -sf 'T%s' -t 50 > "$PANEL_FIFO" &
 
 # clock
 while true;
@@ -35,10 +35,10 @@ do echo "D %{A:dzen-cal:} \uf073  %{A}" $(date +'%b %d')
 done > $PANEL_FIFO &
 
 # system info
-while true;
-do echo "S %{A:sysconky.sh:} \uf109 %{A}"
-	sleep 30
-done > $PANEL_FIFO &
+#while true;
+#do echo "S %{A:sysconky.sh:} \uf109 %{A}"
+#	sleep 30
+#done > $PANEL_FIFO &
 
 # wifi
 while true;
@@ -53,13 +53,13 @@ conky > $PANEL_FIFO &
 # volume
 while true;
 do 
-VOLUME=$(amixer get Master | egrep -o "[0-9]+%" | head -n 1)
+VOLUME=$(amixer get PCM | egrep -o "[0-9]+%" | head -n 1)
 	echo V'\uf027  ' $VOLUME 
 	sleep 1
 done > $PANEL_FIFO &
 
-. panel_colors
+. panel_colors_$1
 
-cat "$PANEL_FIFO" | panel_bar | lemonbar -g x$PANEL_HEIGHT -f  "$PANEL_FONT_FAMILY" -f "$ICON_FONT" -F "$COLOR_FOREGROUND" -B "$COLOR_BACKGROUND" -u 2 | zsh &
+cat "$PANEL_FIFO" | panel_bar $1 | lemonbar -g x$PANEL_HEIGHT -f  "$PANEL_FONT_FAMILY" -f "$ICON_FONT" -F "#FF$color_fg" -B "#FF$color_bg" -u 2 | zsh &
 
 wait

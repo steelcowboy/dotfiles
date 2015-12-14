@@ -30,7 +30,7 @@ font pango:Droid Sans Mono 9
 floating_modifier $mod
 
 # start a terminal
-bindsym $mod+Return exec urxvt
+bindsym $mod+Return exec urxvtc
 
 # kill focused window
 bindsym $mod+Shift+q kill
@@ -131,6 +131,7 @@ bindsym $mod+Escape exec oblogout
 # Special actions
 bindsym $mod+Shift+p exec killall panel && nohup panel >&/dev/null &
 bindsym $mod+Shift+v exec netsurf ~/Documents/vimqrc.html
+bindsym $mod+Shift+n exec urxvtc -e ncmpcpp 
 
 # Media Keys
 
@@ -141,18 +142,6 @@ bindsym XF86AudioPlay exec mpc toggle
 bindsym XF86AudioStop exec mpc stop
 bindsym XF86AudioPrev exec mpc prev
 bindsym XF86AudioNext exec mpc next
-
-# Tablet keys
-
-bindsym XF86RotateWindows exec grox.rb flip
-bindsym XF86TaskPane exec keyboard
-
-# Extra Keys
-
-bindsym XF86MonBrightnessDown exec xbacklight -dec 10
-bindsym XF86MonBrightnessUp exec xbacklight -inc 10
-bindsym XF86ScreenSaver exec i3lock -d -i /home/steelcowboy/Pictures/shield.png 
-bindsym XF86TouchpadToggle exec synclient TouchpadOff=$(synclient -l | grep -c 'TouchpadOff.*=.*0')
 
 # Window Rules
 
@@ -169,13 +158,8 @@ hide_edge_borders none
 
 # Startup programs
 
-exec --no-startup-id panel
-#exec --no-startup-id onboard 
-#exec --no-startup-id nitrogen --restore
-#exec --no-startup-id /opt/urserver/urserver --daemon 
-#exec --no-startup-id touchegg
+exec --no-startup-id /home/steelcowboy/bin/interface.sh
 exec --no-startup-id compton -b --vsync opengl
-#exec --no-startup-id kalu
 exec --no-startup-id nm-applet
 
 # Tweaks

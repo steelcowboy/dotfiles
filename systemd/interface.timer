@@ -1,0 +1,11 @@
+[Unit]
+Description=Run the interface script at multiple times during the day
+
+[Timer]
+OnCalendar=6:00
+OnCalendar=12:00
+OnCalendar=16:00
+OnCalendar=18:00
+
+[Install]
+WantedBy=timers.target
