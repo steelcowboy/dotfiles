@@ -19,7 +19,7 @@ trap 'trap - TERM; kill 0' INT TERM QUIT EXIT
 [ -e "$PANEL_FIFO" ] && rm "$PANEL_FIFO"
 mkfifo "$PANEL_FIFO"
 
-#xtitle -sf 'T%s' -t 50 > "$PANEL_FIFO" &
+xtitle -sf 'T%s' -t 50 > "$PANEL_FIFO" &
 
 # clock
 while true;
@@ -53,7 +53,7 @@ conky > $PANEL_FIFO &
 # volume
 while true;
 do 
-VOLUME=$(amixer get PCM | egrep -o "[0-9]+%" | head -n 1)
+VOLUME=$(amixer get Master | egrep -o "[0-9]+%" | head -n 1)
 	echo V'\uf027  ' $VOLUME 
 	sleep 1
 done > $PANEL_FIFO &
