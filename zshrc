@@ -103,20 +103,17 @@ alias sitesync='rsync -avz --progress --exclude-from '/home/steelcowboy/sitesync
 alias sitepush='rsync -avz --progress --exclude-from '/home/steelcowboy/sitesync/aexclude.txt' /srv/http/* ssh.steelcowboy.me:/srv/http/'
 alias delpem='sudo chown -R steelcowboy:deluge /srv/deluge/Downloads/Music'
 
-# Chrome apps
-alias chromt='google-chrome-unstable --app-id=pnhechapfaindjhompbnflcldabbghjo'
-alias plex='google-chrome-unstable --app-id=fpniocchabmgenibceglhnfeimmdhdfm'
-
 # Tools
 alias fbvid='mplayer -vo fbdev2 -fs -zoom -xy 1600'
 alias sco='xset -dpms; xset s off'
 alias nano="echo 'How about vim?'; false"
 alias speedtest="wget -O /dev/null http://speedtest.wdc01.softlayer.com/downloads/test10.zip"
-alias sshome="ssh ssh.steelcowboy.me"
+alias sshome="ssh steelcowboy.me"
 mkcd () {
   mkdir "$1"
   cd "$1"
 }
+alias keyme='ssh-keygen -C "$(whoami)@$(hostname)-$(date -I)"'
 
 sysenable () {
 	sudo systemctl enable "$1"
