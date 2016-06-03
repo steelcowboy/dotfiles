@@ -99,15 +99,15 @@ alias dbrem='sudo rm /var/lib/pacman/db.lck'
 alias paccount='pacman -Q | wc -l'
 
 # File management
-alias sitesync='rsync -avz --progress --exclude-from '/home/steelcowboy/sitesync/exclude.txt' ssh.steelcowboy.me:/srv/http/* /srv/http/'
-alias sitepush='rsync -avz --progress --exclude-from '/home/steelcowboy/sitesync/aexclude.txt' /srv/http/* ssh.steelcowboy.me:/srv/http/'
+alias sitesync='rsync -avz --progress --exclude-from '/home/steelcowboy/sitesync/exclude.txt' steelcowboy.me:/srv/http/* /srv/http/'
+alias sitepush='rsync -avz --progress --exclude-from '/home/steelcowboy/sitesync/aexclude.txt' /srv/http/* steelcowboy.me:/srv/http/'
 alias delpem='sudo chown -R steelcowboy:deluge /srv/deluge/Downloads/Music'
 
 # Tools
 alias fbvid='mplayer -vo fbdev2 -fs -zoom -xy 1600'
 alias sco='xset -dpms; xset s off'
 alias nano="echo 'How about vim?'; false"
-alias speedtest="wget -O /dev/null http://speedtest.wdc01.softlayer.com/downloads/test10.zip"
+alias speedtest="wget -O /dev/null http://speedtest.wdc01.softlayer.com/downloads/test100.zip"
 alias sshome="ssh steelcowboy.me"
 mkcd () {
   mkdir "$1"
@@ -123,6 +123,7 @@ sysenable () {
 # Default options
 alias xclip="xclip -selection c"
 alias pgrep="nocorrect pgrep"
+alias R="R --quiet"
 
 [ $DISPLAY ] && eval $(keychain --eval --agents ssh -Q --quiet id_rsa)
 

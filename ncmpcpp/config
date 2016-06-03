@@ -15,3 +15,11 @@ progressbar_color = "yellow"
 statusbar_color = "yellow"
 active_column_color = "yellow"
 visualizer_color = "cyan"
+
+visualizer_fifo_path = "/tmp/mpd.fifo"
+visualizer_output_name = "my_fifo"
+visualizer_sync_interval = "30" 
+visualizer_in_stereo = "yes"
+#visualizer_type = "wave" (spectrum/wave)
+visualizer_type = "spectrum" (spectrum/wave)
+visualizer_look = "+|"

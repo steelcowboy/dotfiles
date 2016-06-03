@@ -180,7 +180,7 @@ URxvt*scrollTtyKeypress: true
 ! Specifies the program to be started with a URL argument. Used by the "selection-popup" and "matcher" perl extensions.
 ! URxvt*url-launcher: string
 
-URxvt*background: #002b36
+URxvt*background: Black 
 !URxvt*foreground: #657b83
 !!*fading: 40
 !URxvt*fadeColor: #002b36
