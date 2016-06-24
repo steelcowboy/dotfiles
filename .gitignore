@@ -3,5 +3,4 @@ mpd/log
 mpd/pid
 mpd/state
 mpd/sticker.sql
-mpd/playlists
-vim/.netrwhist
+nvim/plugged

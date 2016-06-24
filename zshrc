@@ -5,11 +5,14 @@
 export XDG_CONFIG_HOME="$HOME/.config"
 
 # PATH
-export PATH=$PATH:/sbin:$HOME/.gem/ruby/2.2.0/bin:$HOME/bin:$HOME/.config/i3/panel
+export PATH=$PATH:/sbin:$HOME/.gem/ruby/2.2.0/bin:/snap/bin:$HOME/bin:$HOME/.config/i3/panel
 export PANEL_FIFO=/tmp/panel_fifo 
 
 # Path to your oh-my-zsh installation.
 export ZSH=$HOME/.oh-my-zsh
+
+# Well fuck...
+eval $(thefuck --alias)
 
 # Set name of the theme to load.
 # Look in ~/.oh-my-zsh/themes/
@@ -88,6 +91,21 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh" 
+
+case "$TERM" in
+    xterm*)
+        if [ -e /usr/share/terminfo/x/xterm-256color ]; then
+            export TERM=xterm-256color
+        elif [ -e /usr/share/terminfo/x/xterm-color ]; then
+            export TERM=xterm-color;
+        else
+            export TERM=xterm
+        fi
+        ;;
+    linux)
+        [ -n "$FBTERM" ] && export TERM=fbterm
+        ;;
+esac
 
 unsetopt nomatch
 
