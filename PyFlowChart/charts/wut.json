@@ -1,0 +1,19 @@
+{
+    "courses": [
+        {
+            "course_type": "Support",
+            "credits": 3.0,
+            "prereqs": [
+                "hgn"
+            ],
+            "title": "gfahh",
+            "course_id": 1,
+            "catalog": "hgpng",
+            "time": [
+                "2",
+                "Winter"
+            ],
+            "ge_type": "A1"
+        }
+    ]
+}

@@ -1,0 +1,760 @@
+{
+    "courses": [
+        {
+            "catalog": "AERO 121",
+            "ge_type": null,
+            "credits": 2.0,
+            "course_type": "Major",
+            "prereqs": [],
+            "course_id": 0,
+            "time": [
+                "1",
+                "Fall"
+            ],
+            "title": "Aerospace Fundamentals"
+        },
+        {
+            "catalog": "KINE 250",
+            "ge_type": "D4/E",
+            "credits": 4.0,
+            "course_type": "General Ed",
+            "prereqs": [],
+            "course_id": 1,
+            "time": [
+                "1",
+                "Fall"
+            ],
+            "title": "Healthy Living"
+        },
+        {
+            "catalog": "IME 144",
+            "ge_type": null,
+            "credits": 4.0,
+            "course_type": "Support",
+            "prereqs": [
+                ""
+            ],
+            "course_id": 2,
+            "time": [
+                "1",
+                "Fall"
+            ],
+            "title": "Introduction to Design & Manufacturing"
+        },
+        {
+            "catalog": "PHYS 141",
+            "ge_type": null,
+            "credits": 4.0,
+            "course_type": "Support",
+            "prereqs": [
+                ""
+            ],
+            "course_id": 3,
+            "time": [
+                "1",
+                "Fall"
+            ],
+            "title": "General Physics 1A"
+        },
+        {
+            "catalog": "COMS 101",
+            "ge_type": "A2",
+            "credits": 4.0,
+            "course_type": "General Ed",
+            "prereqs": [],
+            "course_id": 4,
+            "time": [
+                "1",
+                "Winter"
+            ],
+            "title": "Public Speaking"
+        },
+        {
+            "catalog": "PHYS 133",
+            "ge_type": "B4",
+            "credits": 4.0,
+            "course_type": "Support",
+            "prereqs": [
+                "PHYS 141"
+            ],
+            "course_id": 5,
+            "time": [
+                "1",
+                "Winter"
+            ],
+            "title": "General Physics III"
+        },
+        {
+            "catalog": "STAT 312",
+            "ge_type": "B6",
+            "credits": 4.0,
+            "course_type": "Support",
+            "prereqs": [
+                "MATH 142"
+            ],
+            "course_id": 6,
+            "time": [
+                "1",
+                "Winter"
+            ],
+            "title": "Statistical Methods for Engineers"
+        },
+        {
+            "catalog": "BIO 213",
+            "ge_type": "B2",
+            "credits": 2.0,
+            "course_type": "Support",
+            "prereqs": [],
+            "course_id": 7,
+            "time": [
+                "1",
+                "Spring"
+            ],
+            "title": "Life Science for Engineers"
+        },
+        {
+            "catalog": "BMED 213",
+            "ge_type": null,
+            "credits": 2.0,
+            "course_type": "Support",
+            "prereqs": [],
+            "course_id": 8,
+            "time": [
+                "1",
+                "Spring"
+            ],
+            "title": "Bioengineering Fundamentals"
+        },
+        {
+            "catalog": "ENGL 149",
+            "ge_type": "A3",
+            "credits": 4.0,
+            "course_type": "Support",
+            "prereqs": [],
+            "course_id": 9,
+            "time": [
+                "1",
+                "Spring"
+            ],
+            "title": "Technical Writing for Engineers"
+        },
+        {
+            "catalog": "MATH 244",
+            "ge_type": null,
+            "credits": 4.0,
+            "course_type": "Support",
+            "prereqs": [
+                "MATH 143"
+            ],
+            "course_id": 10,
+            "time": [
+                "1",
+                "Spring"
+            ],
+            "title": "Linear Analysis I"
+        },
+        {
+            "catalog": "PHYS 132",
+            "ge_type": null,
+            "credits": 4.0,
+            "course_type": "Support",
+            "prereqs": [
+                "PHYS 141"
+            ],
+            "course_id": 11,
+            "time": [
+                "1",
+                "Spring"
+            ],
+            "title": "General Physics II"
+        },
+        {
+            "catalog": "AERO 215",
+            "ge_type": null,
+            "credits": 2.0,
+            "course_type": "Major",
+            "prereqs": [
+                "AERO 121",
+                "MATH 143",
+                "IME 144"
+            ],
+            "course_id": 12,
+            "time": [
+                "2",
+                "Fall"
+            ],
+            "title": "Introduction to Aerospace Design"
+        },
+        {
+            "catalog": "ME 211",
+            "ge_type": null,
+            "credits": 3.0,
+            "course_type": "Support",
+            "prereqs": [
+                "MATH 241",
+                "PHYS 141"
+            ],
+            "course_id": 13,
+            "time": [
+                "2",
+                "Fall"
+            ],
+            "title": "Engineering Statics"
+        },
+        {
+            "catalog": "CHEM 124",
+            "ge_type": null,
+            "credits": 4.0,
+            "course_type": "Support",
+            "prereqs": [],
+            "course_id": 14,
+            "time": [
+                "2",
+                "Fall"
+            ],
+            "title": "General Chemistry for Physical Science & Engineering I"
+        },
+        {
+            "catalog": "EE 251",
+            "ge_type": null,
+            "credits": 1.0,
+            "course_type": "Major",
+            "prereqs": [
+                "MATH 244",
+                "PHYS 133"
+            ],
+            "course_id": 15,
+            "time": [
+                "2",
+                "Fall"
+            ],
+            "title": "Electric Circuits Laboratory"
+        },
+        {
+            "catalog": "EE 201",
+            "ge_type": null,
+            "credits": 3.0,
+            "course_type": "Major",
+            "prereqs": [
+                "MATH 244",
+                "PHYS 133"
+            ],
+            "course_id": 16,
+            "time": [
+                "2",
+                "Fall"
+            ],
+            "title": "Electric Circuit Theory"
+        },
+        {
+            "catalog": "MATE 210",
+            "ge_type": null,
+            "credits": 3.0,
+            "course_type": "Support",
+            "prereqs": [
+                "CHEM 124"
+            ],
+            "course_id": 17,
+            "time": [
+                "2",
+                "Winter"
+            ],
+            "title": "Materials Engineering"
+        },
+        {
+            "catalog": "ME 212",
+            "ge_type": null,
+            "credits": 3.0,
+            "course_type": "Support",
+            "prereqs": [
+                "MATH 241",
+                "ME 211"
+            ],
+            "course_id": 18,
+            "time": [
+                "2",
+                "Winter"
+            ],
+            "title": "Engineering Dynamics"
+        },
+        {
+            "catalog": "CE 204",
+            "ge_type": null,
+            "credits": 3.0,
+            "course_type": "Major",
+            "prereqs": [
+                "ME 211"
+            ],
+            "course_id": 19,
+            "time": [
+                "2",
+                "Winter"
+            ],
+            "title": "Mechanics of Materials I"
+        },
+        {
+            "catalog": "AERO 301",
+            "ge_type": null,
+            "credits": 4.0,
+            "course_type": "Major",
+            "prereqs": [
+                "ME 211; Coreq: AERO 300"
+            ],
+            "course_id": 20,
+            "time": [
+                "2",
+                "Spring"
+            ],
+            "title": "Aerothermodynamics I"
+        },
+        {
+            "catalog": "AERO 300",
+            "ge_type": null,
+            "credits": 5.0,
+            "course_type": "Major",
+            "prereqs": [
+                "AERO 215",
+                "MATH 244",
+                "ME 211",
+                "PHYS 133"
+            ],
+            "course_id": 21,
+            "time": [
+                "2",
+                "Spring"
+            ],
+            "title": "Aerospace Engineering Analysis"
+        },
+        {
+            "catalog": "CE 207 ",
+            "ge_type": null,
+            "credits": 2.0,
+            "course_type": "Major",
+            "prereqs": [
+                "CE 204"
+            ],
+            "course_id": 22,
+            "time": [
+                "2",
+                "Spring"
+            ],
+            "title": "Mechanics of Materials II"
+        },
+        {
+            "catalog": "AERO 302",
+            "ge_type": null,
+            "credits": 4.0,
+            "course_type": "Major",
+            "prereqs": [
+                "AERO 301"
+            ],
+            "course_id": 23,
+            "time": [
+                "3",
+                "Fall"
+            ],
+            "title": "Aerothermodynamics II"
+        },
+        {
+            "catalog": "AERO 351",
+            "ge_type": null,
+            "credits": 4.0,
+            "course_type": "Concentration",
+            "prereqs": [
+                "AERO 300",
+                "ME 212"
+            ],
+            "course_id": 24,
+            "time": [
+                "3",
+                "Fall"
+            ],
+            "title": "Introduction to Orbital Mechanics"
+        },
+        {
+            "catalog": "AERO 320",
+            "ge_type": null,
+            "credits": 4.0,
+            "course_type": "Major",
+            "prereqs": [
+                "AERO 300",
+                "ME 212"
+            ],
+            "course_id": 25,
+            "time": [
+                "3",
+                "Fall"
+            ],
+            "title": "Fundamentals of Dynamics and Control"
+        },
+        {
+            "catalog": "AERO 303",
+            "ge_type": null,
+            "credits": 4.0,
+            "course_type": "Major",
+            "prereqs": [
+                "AERO 302"
+            ],
+            "course_id": 26,
+            "time": [
+                "3",
+                "Winter"
+            ],
+            "title": "Aerothermodynamics III"
+        },
+        {
+            "catalog": "AERO 304 ",
+            "ge_type": null,
+            "credits": 2.0,
+            "course_type": "Major",
+            "prereqs": [
+                "ENGL 149",
+                "AERO 301"
+            ],
+            "course_id": 27,
+            "time": [
+                "3",
+                "Winter"
+            ],
+            "title": "Experimental Aerothermodynamics"
+        },
+        {
+            "catalog": "AERO 331",
+            "ge_type": null,
+            "credits": 4.0,
+            "course_type": "Major",
+            "prereqs": [
+                "AERO 300",
+                "CE 207",
+                "ME 212"
+            ],
+            "course_id": 28,
+            "time": [
+                "3",
+                "Winter"
+            ],
+            "title": "Aerospace Structural Analysis I"
+        },
+        {
+            "catalog": "AERO 353",
+            "ge_type": null,
+            "credits": 4.0,
+            "course_type": "Major",
+            "prereqs": [
+                "AERO 300",
+                "AERO 301"
+            ],
+            "course_id": 29,
+            "time": [
+                "3",
+                "Winter"
+            ],
+            "title": "Spacecraft Environment"
+        },
+        {
+            "catalog": "AERO 421",
+            "ge_type": null,
+            "credits": 4.0,
+            "course_type": "Concentration",
+            "prereqs": [
+                "AERO 320",
+                "AERO 351"
+            ],
+            "course_id": 30,
+            "time": [
+                "3",
+                "Spring"
+            ],
+            "title": "Spacecraft Attitude Dynamics & Control"
+        },
+        {
+            "catalog": "AERO 446",
+            "ge_type": null,
+            "credits": 4.0,
+            "course_type": "Concentration",
+            "prereqs": [
+                "ME 212",
+                "EE 201",
+                "EE 251",
+                "AERO 353"
+            ],
+            "course_id": 31,
+            "time": [
+                "3",
+                "Spring"
+            ],
+            "title": "Introduction to Space Systems"
+        },
+        {
+            "catalog": "AERO 431",
+            "ge_type": null,
+            "credits": 4.0,
+            "course_type": "Major",
+            "prereqs": [
+                "AERO 331"
+            ],
+            "course_id": 32,
+            "time": [
+                "3",
+                "Spring"
+            ],
+            "title": "Aerospace Structural Analysis II"
+        },
+        {
+            "catalog": "AERO 354",
+            "ge_type": null,
+            "credits": 2.0,
+            "course_type": "Concentration",
+            "prereqs": [
+                "ENGL 149",
+                "AERO 353"
+            ],
+            "course_id": 33,
+            "time": [
+                "3",
+                "Spring"
+            ],
+            "title": "Space Environment Laboratory"
+        },
+        {
+            "catalog": "AERO 402",
+            "ge_type": null,
+            "credits": 5.0,
+            "course_type": "Concentration",
+            "prereqs": [
+                "AERO 303",
+                "AERO 353",
+                "CHEM 124"
+            ],
+            "course_id": 34,
+            "time": [
+                "4",
+                "Fall"
+            ],
+            "title": "Spacecraft Propulsion Systems"
+        },
+        {
+            "catalog": "AERO 447",
+            "ge_type": null,
+            "credits": 4.0,
+            "course_type": "Concentration",
+            "prereqs": [
+                ""
+            ],
+            "course_id": 35,
+            "time": [
+                "4",
+                "Fall"
+            ],
+            "title": "Spacecraft Design I"
+        },
+        {
+            "catalog": "AERO 433",
+            "ge_type": null,
+            "credits": 1.0,
+            "course_type": "Major",
+            "prereqs": [
+                "AERO 331",
+                "AERO 431"
+            ],
+            "course_id": 36,
+            "time": [
+                "4",
+                "Fall"
+            ],
+            "title": "Experimental Stress Analysis "
+        },
+        {
+            "catalog": "AERO 460",
+            "ge_type": null,
+            "credits": 1.0,
+            "course_type": "Major",
+            "prereqs": [
+                ""
+            ],
+            "course_id": 37,
+            "time": [
+                "4",
+                "Fall"
+            ],
+            "title": " Aerospace Engineering Professional Preparation"
+        },
+        {
+            "catalog": "AERO 448",
+            "ge_type": null,
+            "credits": 3.0,
+            "course_type": "Concentration",
+            "prereqs": [
+                "AERO 447"
+            ],
+            "course_id": 38,
+            "time": [
+                "4",
+                "Winter"
+            ],
+            "title": "Spacecraft Design II"
+        },
+        {
+            "catalog": "AERO 465 ",
+            "ge_type": null,
+            "credits": 1.0,
+            "course_type": "Major",
+            "prereqs": [
+                "AERO 303",
+                "AERO 304",
+                "AERO 320",
+                "431"
+            ],
+            "course_id": 39,
+            "time": [
+                "4",
+                "Winter"
+            ],
+            "title": "Aerospace Systems Senior Laboratory"
+        },
+        {
+            "catalog": "AERO 449",
+            "ge_type": null,
+            "credits": 3.0,
+            "course_type": "Concentration",
+            "prereqs": [
+                ""
+            ],
+            "course_id": 40,
+            "time": [
+                "4",
+                "Spring"
+            ],
+            "title": "Spacecraft Design III"
+        },
+        {
+            "catalog": "GE",
+            "ge_type": null,
+            "credits": 4.0,
+            "course_type": "General Ed",
+            "prereqs": [],
+            "course_id": 41,
+            "time": [
+                "2",
+                "Summer"
+            ],
+            "title": "GE"
+        },
+        {
+            "catalog": "GE",
+            "ge_type": null,
+            "credits": 4.0,
+            "course_type": "General Ed",
+            "prereqs": [
+                ""
+            ],
+            "course_id": 42,
+            "time": [
+                "4",
+                "Fall"
+            ],
+            "title": "GE"
+        },
+        {
+            "catalog": "GE",
+            "ge_type": null,
+            "credits": 4.0,
+            "course_type": "General Ed",
+            "prereqs": [
+                ""
+            ],
+            "course_id": 43,
+            "time": [
+                "4",
+                "Winter"
+            ],
+            "title": "GE"
+        },
+        {
+            "catalog": "GE",
+            "ge_type": null,
+            "credits": 4.0,
+            "course_type": "General Ed",
+            "prereqs": [
+                ""
+            ],
+            "course_id": 44,
+            "time": [
+                "4",
+                "Spring"
+            ],
+            "title": "GE"
+        },
+        {
+            "catalog": "GE",
+            "ge_type": null,
+            "credits": 4.0,
+            "course_type": "General Ed",
+            "prereqs": [
+                ""
+            ],
+            "course_id": 45,
+            "time": [
+                "4",
+                "Spring"
+            ],
+            "title": "GE"
+        },
+        {
+            "catalog": "CPE 101",
+            "ge_type": null,
+            "credits": 4.0,
+            "course_type": "Minor",
+            "prereqs": [],
+            "course_id": 46,
+            "time": [
+                "2",
+                "Fall"
+            ],
+            "title": "Fundamentals of Computer Science I"
+        },
+        {
+            "catalog": "CPE 102",
+            "ge_type": null,
+            "credits": 4.0,
+            "course_type": "Minor",
+            "prereqs": [
+                "CPE 101"
+            ],
+            "course_id": 47,
+            "time": [
+                "2",
+                "Winter"
+            ],
+            "title": "Fundamentals of Computer Science II"
+        },
+        {
+            "catalog": "CPE 103",
+            "ge_type": null,
+            "credits": 4.0,
+            "course_type": "Minor",
+            "prereqs": [
+                "CPE 102"
+            ],
+            "course_id": 48,
+            "time": [
+                "2",
+                "Spring"
+            ],
+            "title": "Fundamentals of Computer Science III"
+        },
+        {
+            "catalog": "GE",
+            "ge_type": null,
+            "credits": 4.0,
+            "course_type": "General Ed",
+            "prereqs": [],
+            "course_id": 49,
+            "time": [
+                "2",
+                "Summer"
+            ],
+            "title": "GE"
+        }
+    ]
+}

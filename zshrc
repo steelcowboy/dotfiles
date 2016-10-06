@@ -18,7 +18,7 @@ eval $(thefuck --alias)
 # Look in ~/.oh-my-zsh/themes/
 # Optionally, if you set this to "random", it'll load a random theme each
 # time that oh-my-zsh is loaded.
-ZSH_THEME="gentoo"
+ZSH_THEME="agnoster"
 
 # Uncomment the following line to use case-sensitive completion.
 # CASE_SENSITIVE="true"
@@ -117,8 +117,8 @@ alias dbrem='sudo rm /var/lib/pacman/db.lck'
 alias paccount='pacman -Q | wc -l'
 
 # File management
-alias sitesync='rsync -avz --progress --exclude-from '/home/steelcowboy/sitesync/exclude.txt' steelcowboy.me:/srv/http/* /srv/http/'
-alias sitepush='rsync -avz --progress --exclude-from '/home/steelcowboy/sitesync/aexclude.txt' /srv/http/* steelcowboy.me:/srv/http/'
+alias sitesync='rsync -avz --progress steelcowboy.me:/srv/http/* /srv/http/'
+alias sitepush='rsync -avz --progress /srv/http/* steelcowboy.me:/srv/http/'
 alias delpem='sudo chown -R steelcowboy:deluge /srv/deluge/Downloads/Music'
 
 # Tools
@@ -142,6 +142,7 @@ sysenable () {
 alias xclip="xclip -selection c"
 alias pgrep="nocorrect pgrep"
 alias R="R --quiet"
+alias st="st -f 'Droid Sans Mono:pixelsize=16'"
 
 [ $DISPLAY ] && eval $(keychain --eval --agents ssh -Q --quiet id_rsa)
 

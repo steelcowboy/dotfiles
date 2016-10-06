@@ -1,0 +1,79 @@
+{
+    "courses": [
+        {
+            "course_id": 0,
+            "ge_type": "D3",
+            "time": [
+                "1",
+                "Winter"
+            ],
+            "prereqs": [
+                "mhioeastn"
+            ],
+            "course_type": "Minor",
+            "title": "First",
+            "credits": 2.0,
+            "catalog": "FIR"
+        },
+        {
+            "course_id": 2,
+            "ge_type": null,
+            "time": [
+                "1",
+                "Spring"
+            ],
+            "prereqs": [
+                "Me"
+            ],
+            "course_type": "Major",
+            "title": "Second",
+            "credits": 4.0,
+            "catalog": "SEC"
+        },
+        {
+            "course_id": 3,
+            "ge_type": "A2",
+            "time": [
+                "2",
+                "Winter"
+            ],
+            "prereqs": [
+                "You"
+            ],
+            "course_type": "Free Elective",
+            "title": "Third",
+            "credits": 6.0,
+            "catalog": "THIR"
+        },
+        {
+            "course_id": 4,
+            "ge_type": null,
+            "time": [
+                "1",
+                "Fall"
+            ],
+            "prereqs": [
+                "None"
+            ],
+            "course_type": "Concentration",
+            "title": "Forth",
+            "credits": 5.0,
+            "catalog": "FORT"
+        },
+        {
+            "course_id": 5,
+            "ge_type": "D4/E",
+            "time": [
+                "2",
+                "Fall"
+            ],
+            "prereqs": [
+                "Nope"
+            ],
+            "course_type": "General Ed",
+            "title": "Fifth",
+            "credits": 3.0,
+            "catalog": "FIF"
+        }
+    ]
+}
