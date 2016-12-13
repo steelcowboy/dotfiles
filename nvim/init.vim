@@ -5,6 +5,7 @@ Plug 'octol/vim-cpp-enhanced-highlight'
 Plug 'hdima/python-syntax'
 Plug 'steelcowboy/vim-colemak'
 Plug 'jvirtanen/vim-octave'
+Plug 'pearofducks/ansible-vim'
 
 Plug 'scrooloose/syntastic'
 Plug 'scrooloose/nerdcommenter'
