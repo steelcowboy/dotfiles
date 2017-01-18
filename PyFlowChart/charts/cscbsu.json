@@ -552,7 +552,7 @@
             "course_type": "General Ed",
             "time": [
                 2,
-                "Winter"
+                "Summer"
             ],
             "credits": 4.0,
             "catalog": "GE"
@@ -560,14 +560,14 @@
         "68": {
             "prereqs": [],
             "ge_type": "D3",
-            "title": "GE",
+            "title": "World History 1",
             "course_type": "General Ed",
             "time": [
-                2,
+                "2",
                 "Winter"
             ],
             "credits": 4.0,
-            "catalog": "GE"
+            "catalog": "HIST 210"
         },
         "69": {
             "prereqs": [],
