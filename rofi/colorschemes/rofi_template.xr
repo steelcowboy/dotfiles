@@ -1,0 +1,8 @@
+! Colors follow scheme background, foreground, background alt, highlight background, highlight foreground 
+rofi.color-normal:                   #497F1F,#CADB7D,#529221,#662408,#eee8d5
+! "Color scheme for urgent row" Set from: Default
+rofi.color-urgent:                   #529221,#dc322f,#eee8d5,#662408,#fdf6e3
+! "Color scheme for active row" Set from: Default
+rofi.color-active:                   #529221,#FFFFFF,#eee8d5,#3F1300,#fdf6e3
+! "Color scheme window" Set from: Default
+rofi.color-window:                   #529221,#183800
