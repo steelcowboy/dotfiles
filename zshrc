@@ -20,9 +20,6 @@ export PANEL_FIFO=/tmp/panel_fifo
 # Path to your oh-my-zsh installation.
 export ZSH=$HOME/.oh-my-zsh
 
-# Well fuck...
-eval $(thefuck --alias)
-
 # Set name of the theme to load.
 # Look in ~/.oh-my-zsh/themes/
 # Optionally, if you set this to "random", it'll load a random theme each
@@ -67,7 +64,7 @@ ENABLE_CORRECTION="true"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(cp)
+plugins=(cp) 
 
 # User configuration
 
@@ -135,17 +132,12 @@ alias fbvid='mplayer -vo fbdev2 -fs -zoom -xy 1600'
 alias sco='xset -dpms; xset s off'
 alias nano="echo 'How about vim?'; false"
 alias speedtest="wget -O /dev/null http://speedtest.wdc01.softlayer.com/downloads/test100.zip"
-alias sshome="ssh steelcowboy.me"
+alias sshome="ssh devjimheald.com"
 mkcd () {
   mkdir "$1"
   cd "$1"
 }
 alias keyme='ssh-keygen -C "$(whoami)@$(hostname)-$(date -I)"'
-
-sysenable () {
-	sudo systemctl enable "$1"
-	sudo systemctl start "$1"
-}
 
 # Default options
 alias xclip="xclip -selection c"
