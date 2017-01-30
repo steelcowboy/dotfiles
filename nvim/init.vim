@@ -1,11 +1,11 @@
 call plug#begin()
 
-
 Plug 'octol/vim-cpp-enhanced-highlight'
 Plug 'hdima/python-syntax'
 Plug 'steelcowboy/vim-colemak'
 Plug 'jvirtanen/vim-octave'
 Plug 'pearofducks/ansible-vim'
+Plug 'lervag/vimtex'
 
 Plug 'scrooloose/syntastic'
 Plug 'scrooloose/nerdcommenter'
@@ -31,9 +31,12 @@ set si
 set wrap
 set modeline
 set nu
+set mouse=r
+set cc=80
 
+autocmd FileType tex set spell
 autocmd FileType make setlocal noexpandtab
-autocmd FileType cpp setlocal foldmethod=syntax
+"autocmd FileType cpp setlocal foldmethod=syntax
 
 inoremap <F9> <C-O>za
 nnoremap <F9> za
@@ -48,6 +51,9 @@ set background=dark
 let g:solarized_termcolors=256
 colorscheme solarized
 let python_highlight_all = 1
+
+" VimTex
+let g:tex_fast = 1
 
 " Airline
 let g:airline_powerline_fonts = 1
@@ -67,3 +73,18 @@ let g:airline_theme = 'base16'
  let g:syntastic_cpp_cpplint_exec = 'cpplint'
 
  let g:ycm_global_ycm_extra_conf = "~/.ycm_extra_conf.py"
+
+" YCM
+if !exists('g:ycm_semantic_triggers')
+	let g:ycm_semantic_triggers = {}
+endif
+let g:ycm_semantic_triggers.tex = [
+	\ 're!\\[A-Za-z]*cite[A-Za-z]*(\[[^]]*\]){0,2}{[^}]*',
+	\ 're!\\[A-Za-z]*ref({[^}]*|range{([^,{}]*(}{)?))',
+	\ 're!\\hyperref\[[^]]*',
+	\ 're!\\includegraphics\*?(\[[^]]*\]){0,2}{[^}]*',
+	\ 're!\\(include(only)?|input){[^}]*',
+	\ 're!\\\a*(gls|Gls|GLS)(pl)?\a*(\s*\[[^]]*\]){0,2}\s*\{[^}]*',
+	\ 're!\\includepdf(\s*\[[^]]*\])?\s*\{[^}]*',
+	\ 're!\\includestandalone(\s*\[[^]]*\])?\s*\{[^}]*',
+	\ ]

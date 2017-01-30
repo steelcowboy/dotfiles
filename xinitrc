@@ -47,8 +47,11 @@ fi
 # sxhkd &
 # exec bspwm
 
-urxvtd -q -f -o
+# urxvtd -q -f -o
 
-exec i3
+pactl load-module module-alsa-sink device=hw:0,0
+
+#exec gnome-session
+#exec i3-gnome 
 
 

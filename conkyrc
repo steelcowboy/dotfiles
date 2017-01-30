@@ -8,7 +8,7 @@ TEXT
 ${if_mpd_playing}
 
 ${if_match "${mpd_status}" == "Playing"}
-R%{T3}%{A:mpc prev:}%{A}   %{A:mpc pause:}%{A}    %{A:mpc next:}%{A}%{T1}   %{A:playlist.sh:} ${mpd_artist} - ${mpd_title} %{A} | ${mpd_elapsed}/${mpd_length} 
+R%{T3}%{A:mpc prev:}%{A}   %{A:mpc pause:}%{A}    %{A:mpc next:}%{A}%{T1}   %{A:playlist.sh:} ${mpd_artist} - ${mpd_title} %{A} | ${mpd_elapsed}/${mpd_length}
 ${endif}
 
 ${if_match "${mpd_status}" == "Paused"}

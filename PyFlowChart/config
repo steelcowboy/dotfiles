@@ -1,16 +1,27 @@
 {
-    "userInfo": {},
+    "userInfo": {
+        "year": 2
+    },
     "GEs": {
-        "D4/E": "KINE 250",
         "A1": "AP Lang",
-        "B2": "BIO 213",
-        "B1": "Ohlone Calc II",
+        "A2": "COMS 101",
         "A3": "ENGL 149",
+        "B1": "Ohlone Calc II",
+        "B2": "BIO 213",
+        "B3": "AP Physics",
+        "B4": "PHYS 133",
         "B5": "NA",
         "B6": "STAT 312",
-        "B3": "AP Physics",
+        "C1": "GE",
+        "C2": "PHIL 230",
+        "C3": "MU 229",
+        "C4": "PHIL 309",
+        "C5": "NA",
+        "D1": "GE",
+        "D2": "GE",
+        "D3": "HIST 210",
+        "D4/E": "KINE 250",
         "D5": "NA",
-        "A2": "COMS 101",
         "F": "NA"
     }
 }

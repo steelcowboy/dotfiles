@@ -138,10 +138,10 @@ bindsym $mod+Shift+n exec urxvtc -e ncmpcpp
 bindsym XF86AudioRaiseVolume exec amixer -D pulse set Master 5%+ unmute
 bindsym XF86AudioLowerVolume exec amixer -D pulse set Master 5%- unmute
 bindsym XF86AudioMute exec amixer -D pulse set Master toggle
-#bindsym XF86AudioPlay exec mpc toggle
-#bindsym XF86AudioStop exec mpc stop
-#bindsym XF86AudioPrev exec mpc prev
-#bindsym XF86AudioNext exec mpc next
+bindsym XF86AudioPlay exec mpc toggle
+bindsym XF86AudioStop exec mpc stop
+bindsym XF86AudioPrev exec mpc prev
+bindsym XF86AudioNext exec mpc next
 
 # Window Rules
 
@@ -158,10 +158,10 @@ hide_edge_borders none
 
 # Startup programs
 
-exec --no-startup-id /home/steelcowboy/.screenlayout/extended.sh
-exec --no-startup-id /home/steelcowboy/bin/interface.sh
+#exec --no-startup-id /home/steelcowboy/.screenlayout/extended.sh
+#exec --no-startup-id /home/steelcowboy/bin/interface.sh
 exec --no-startup-id compton -b --vsync opengl
-exec --no-startup-id nm-applet
+#exec --no-startup-id nm-applet
 
 # Tweaks
 

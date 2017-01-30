@@ -1,4 +1,5 @@
 #! /bin/zsh
+PATH=$PATH:$HOME/.config/i3/panel
 
 if [ $(pgrep -cx panel) -gt 1 ] ; then
 	killall panel

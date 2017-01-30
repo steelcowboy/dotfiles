@@ -1,6 +1,15 @@
 # Autojump sourcing
 . /etc/profile.d/autojump.zsh
 
+# What to do if no command??
+. /usr/share/doc/pkgfile/command-not-found.zsh 
+
+# For solarized ls
+eval `dircolors ~/.dircolors/dircolors.256dark`
+
+# Fix QT
+export QT_QPA_PLATFORMTHEME="qt5ct"
+
 # Config dir
 export XDG_CONFIG_HOME="$HOME/.config"
 

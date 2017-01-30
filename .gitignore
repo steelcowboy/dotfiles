@@ -1,6 +1,6 @@
 mpd/database
-mpd/log
+mpd/log*
 mpd/pid
-mpd/state
+mpd/state*
 mpd/sticker.sql
 nvim/plugged
