@@ -1,33 +1,42 @@
-# Autojump sourcing
-. /etc/profile.d/autojump.zsh
+# Virtualenv Wrapper
+export WORKON_HOME=~/.virtualenvs
+source /usr/local/bin/virtualenvwrapper.sh
 
-# What to do if no command??
-. /usr/share/doc/pkgfile/command-not-found.zsh 
+# nvm
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 
-# For solarized ls
-eval `dircolors ~/.dircolors/dircolors.256dark`
+# Where dat command?
+#source /usr/share/doc/pkgfile/command-not-found.zsh
 
-# Fix QT
-export QT_QPA_PLATFORMTHEME="qt5ct"
+# If you come from bash you might have to change your $PATH.
+# export PATH=$HOME/bin:/usr/local/bin:$PATH
 
-# Config dir
-export XDG_CONFIG_HOME="$HOME/.config"
+# Source autojump
+. /usr/share/autojump/autojump.zsh 
 
-# PATH
-export PATH=$PATH:/sbin:$HOME/.gem/ruby/2.2.0/bin:/snap/bin:$HOME/bin:$HOME/.config/i3/panel
-export PANEL_FIFO=/tmp/panel_fifo 
+# Source OS release
+. /etc/os-release
 
 # Path to your oh-my-zsh installation.
-export ZSH=$HOME/.oh-my-zsh
+export ZSH=/home/steelcowboy/.oh-my-zsh
 
-# Set name of the theme to load.
-# Look in ~/.oh-my-zsh/themes/
-# Optionally, if you set this to "random", it'll load a random theme each
-# time that oh-my-zsh is loaded.
-ZSH_THEME="agnoster"
+# Extra PATH
+export PATH="/usr/lib/ccache/bin:$PATH:$HOME/.cargo/bin:$HOME/go/bin:$(ruby -e 'puts Gem.user_dir')/bin"
+export GOPATH="$HOME/projects/original/go"
+
+# Set name of the theme to load. Optionally, if you set this to "random"
+# it'll load a random theme each time that oh-my-zsh is loaded.
+# See https://github.com/robbyrussell/oh-my-zsh/wiki/Themes
+ZSH_THEME="pygmalion"
 
 # Uncomment the following line to use case-sensitive completion.
 # CASE_SENSITIVE="true"
+
+# Uncomment the following line to use hyphen-insensitive completion. Case
+# sensitive completion must be off. _ and - will be interchangeable.
+# HYPHEN_INSENSITIVE="true"
 
 # Uncomment the following line to disable bi-weekly auto-update checks.
 # DISABLE_AUTO_UPDATE="true"
@@ -42,7 +51,7 @@ ZSH_THEME="agnoster"
 # DISABLE_AUTO_TITLE="true"
 
 # Uncomment the following line to enable command auto-correction.
-ENABLE_CORRECTION="true"
+# ENABLE_CORRECTION="true"
 
 # Uncomment the following line to display red dots whilst waiting for completion.
 # COMPLETION_WAITING_DOTS="true"
@@ -64,30 +73,25 @@ ENABLE_CORRECTION="true"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(cp) 
+plugins=(git)
+
+source $ZSH/oh-my-zsh.sh
 
 # User configuration
 
-# export PATH=$HOME/bin:/usr/local/bin:$PATH
 # export MANPATH="/usr/local/man:$MANPATH"
-
-source $ZSH/oh-my-zsh.sh
 
 # You may need to manually set your language environment
 # export LANG=en_US.UTF-8
 
 # Preferred editor for local and remote sessions
- if [[ -n $SSH_CONNECTION ]]; then
-   export EDITOR='vim'
- else
-   export EDITOR='vim'
- fi
+export EDITOR='nvim'
 
 # Compilation flags
 # export ARCHFLAGS="-arch x86_64"
 
 # ssh
-# export SSH_KEY_PATH="~/.ssh/dsa_id"
+# export SSH_KEY_PATH="~/.ssh/rsa_id"
 
 # Set personal aliases, overriding those provided by oh-my-zsh libs,
 # plugins, and themes. Aliases can be placed here, though oh-my-zsh
@@ -96,55 +100,36 @@ source $ZSH/oh-my-zsh.sh
 #
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
-# alias ohmyzsh="mate ~/.oh-my-zsh" 
-
-case "$TERM" in
-    xterm*)
-        if [ -e /usr/share/terminfo/x/xterm-256color ]; then
-            export TERM=xterm-256color
-        elif [ -e /usr/share/terminfo/x/xterm-color ]; then
-            export TERM=xterm-color;
-        else
-            export TERM=xterm
-        fi
-        ;;
-    linux)
-        [ -n "$FBTERM" ] && export TERM=fbterm
-        ;;
-esac
+# alias ohmyzsh="mate ~/.oh-my-zsh"
 
 unsetopt nomatch
 
 # Pacage aliases
-alias pacupg="pacaur -Syu --noconfirm"
-alias pacins="pacaur -S"
-alias pacrem="pacaur -Rns"
-alias dbrem='sudo rm /var/lib/pacman/db.lck'
-alias paccount='pacman -Q | wc -l'
-
-# File management
-alias sitesync='rsync -avz --progress steelcowboy.me:/srv/http/* /srv/http/'
-alias sitepush='rsync -avz --progress /srv/http/* steelcowboy.me:/srv/http/'
-alias delpem='sudo chown -R steelcowboy:deluge /srv/deluge/Downloads/Music'
+if [[ "$NAME" == "Fedora" ]]; then
+    alias pacupg="sudo dnf update"
+    alias pacins="sudo dnf install"
+    alias pacrem="sudo dnf remove"
+elif [[ "$NAME" == "Arch Linux" ]]; then
+    alias pacupg="yay -Syu "
+    alias pacins="yay -S"
+    alias pacrem="pacman -Rns"
+fi
 
 # Tools
 alias fbvid='mplayer -vo fbdev2 -fs -zoom -xy 1600'
-alias sco='xset -dpms; xset s off'
 alias nano="echo 'How about vim?'; false"
 alias speedtest="wget -O /dev/null http://speedtest.wdc01.softlayer.com/downloads/test100.zip"
-alias sshome="ssh devjimheald.com"
 mkcd () {
   mkdir "$1"
   cd "$1"
 }
 alias keyme='ssh-keygen -C "$(whoami)@$(hostname)-$(date -I)"'
+alias notes="vim $(date +%Y%m%d).wiki"
 
 # Default options
 alias xclip="xclip -selection c"
 alias pgrep="nocorrect pgrep"
-alias R="R --quiet"
-alias st="st -f 'Droid Sans Mono:pixelsize=16'"
+#alias python="python3"
+alias mvr="rsync --remove-source-files -uavh --progress"
 
 [ $DISPLAY ] && eval $(keychain --eval --agents ssh -Q --quiet id_rsa)
-
-
