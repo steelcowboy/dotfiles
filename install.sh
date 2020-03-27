@@ -1,18 +1,13 @@
 #! /bin/bash
 
-ln -s conkyrc ~/.conkyrc
-ln -s tmux.conf ~/.tmux.conf
-ln -s vim ~/.vim
-ln -s vim/vimrc ~/.vimrc
-ln -s xinitrc ~/.xinitrc
-ln -s Xresources ~/.Xresources
-ln -s zshrc ~/.zshrc
-ln -s ncmpcpp ~/.nmcpcpp
+# This beauty came from https://stackoverflow.com/questions/59895/how-to-get-the-source-directory-of-a-bash-script-from-within-the-script-itself
+script_dir="$( cd "$( dirname "${BASH_SOURCE[0]}" )" >/dev/null 2>&1 && pwd )"
+
+ln -s "${script_dir}/tmux.conf" ~/.tmux.conf
+ln -s "${script_dir}/zshrc" ~/.zshrc
 
 if [ ! -d "$HOME/.config" ]; then
 	mkdir ~/.config
 fi
 
-ln -s i3 ~/.config/i3
-ln -s mpd ~/.config/mpd
-ln -s touchegg ~/.config/touchegg
+ln -s "${script_dir}/nvim" ~/.config/nvim
