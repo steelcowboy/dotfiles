@@ -1,4 +1,6 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =2
+let g:netrw_dirhist_cnt =4
 let g:netrw_dirhist_1='/home/steelcowboy/.local/share/gnome-shell/extensions/slideforkeyboard@simon.schumann.web.de'
 let g:netrw_dirhist_2='/home/steelcowboy/.config/i3'
+let g:netrw_dirhist_3='/home/steelcowboy/programming/csc225/assignments/asgn2/part2'
+let g:netrw_dirhist_4='/home/steelcowboy/programming/csc202/lab-2-steelcowboy'
