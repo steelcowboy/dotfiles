@@ -1,0 +1,21 @@
+{
+    "courses": {
+        "1": {
+            "title": "Test",
+            "catalog": "TEST",
+            "credits": 2.0,
+            "prereqs": [
+                "PRE"
+            ],
+            "time": [
+                2,
+                "Fall"
+            ],
+            "course_type": "Major",
+            "ge_type": [
+                "A1"
+            ],
+            "notes": "Yo"
+        }
+    }
+}

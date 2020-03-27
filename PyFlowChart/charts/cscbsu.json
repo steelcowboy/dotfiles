@@ -1,650 +1,735 @@
 {
-    "courses": {
-        "0": {
-            "prereqs": [],
-            "ge_type": null,
-            "title": "Aerospace Fundamentals",
-            "course_type": "Free Elective",
-            "time": [
-                "1",
-                "Fall"
-            ],
-            "credits": 2.0,
-            "catalog": "AERO 121"
-        },
-        "1": {
-            "prereqs": [],
-            "ge_type": "D4/E",
-            "title": "Healthy Living",
-            "course_type": "General Ed",
-            "time": [
-                "1",
-                "Fall"
-            ],
-            "credits": 4.0,
-            "catalog": "KINE 250"
-        },
-        "2": {
-            "prereqs": [],
-            "ge_type": null,
-            "title": "Introduction to Design & Manufacturing",
-            "course_type": "Free Elective",
-            "time": [
-                "1",
-                "Fall"
-            ],
-            "credits": 4.0,
-            "catalog": "IME 144"
-        },
-        "3": {
-            "prereqs": [
-                ""
-            ],
-            "ge_type": null,
-            "title": "General Physics 1A",
-            "course_type": "Support",
-            "time": [
-                "1",
-                "Fall"
-            ],
-            "credits": 4.0,
-            "catalog": "PHYS 141"
-        },
-        "4": {
-            "prereqs": [],
-            "ge_type": "A2",
-            "title": "Public Speaking",
-            "course_type": "General Ed",
-            "time": [
-                "1",
-                "Winter"
-            ],
-            "credits": 4.0,
-            "catalog": "COMS 101"
-        },
-        "5": {
-            "prereqs": [
-                "PHYS 141"
-            ],
-            "ge_type": "B4",
-            "title": "General Physics III",
-            "course_type": "Support",
-            "time": [
-                "1",
-                "Winter"
-            ],
-            "credits": 4.0,
-            "catalog": "PHYS 133"
-        },
-        "6": {
-            "prereqs": [
-                "MATH 142"
-            ],
-            "ge_type": "B6",
-            "title": "Statistical Methods for Engineers",
-            "course_type": "Support",
-            "time": [
-                "1",
-                "Winter"
-            ],
-            "credits": 4.0,
-            "catalog": "STAT 312"
-        },
-        "7": {
-            "prereqs": [],
-            "ge_type": "B2",
-            "title": "Life Science for Engineers",
-            "course_type": "Support",
-            "time": [
-                "1",
-                "Spring"
-            ],
-            "credits": 2.0,
-            "catalog": "BIO 213"
-        },
-        "8": {
-            "prereqs": [],
-            "ge_type": null,
-            "title": "Bioengineering Fundamentals",
-            "course_type": "Support",
-            "time": [
-                "1",
-                "Spring"
-            ],
-            "credits": 2.0,
-            "catalog": "BMED 213"
-        },
-        "9": {
-            "prereqs": [],
-            "ge_type": "A3",
-            "title": "Technical Writing for Engineers",
-            "course_type": "Support",
-            "time": [
-                "1",
-                "Spring"
-            ],
-            "credits": 4.0,
-            "catalog": "ENGL 149"
-        },
-        "10": {
-            "prereqs": [
-                "MATH 143"
-            ],
-            "ge_type": null,
-            "title": "Linear Analysis I",
-            "course_type": "Support",
-            "time": [
-                "1",
-                "Spring"
-            ],
-            "credits": 4.0,
-            "catalog": "MATH 244"
-        },
-        "11": {
-            "prereqs": [
-                "PHYS 141"
-            ],
-            "ge_type": null,
-            "title": "General Physics II",
-            "course_type": "Support",
-            "time": [
-                "1",
-                "Spring"
-            ],
-            "credits": 4.0,
-            "catalog": "PHYS 132"
-        },
-        "12": {
-            "prereqs": [
-                "AERO 121",
-                "MATH 143",
-                "IME 144"
-            ],
-            "ge_type": null,
-            "title": "Introduction to Aerospace Design",
-            "course_type": "Free Elective",
-            "time": [
-                "2",
-                "Fall"
-            ],
-            "credits": 2.0,
-            "catalog": "AERO 215"
-        },
-        "13": {
-            "prereqs": [
-                "MATH 241",
-                "PHYS 141"
-            ],
-            "ge_type": null,
-            "title": "Engineering Statics",
-            "course_type": "Free Elective",
-            "time": [
-                "2",
-                "Fall"
-            ],
-            "credits": 3.0,
-            "catalog": "ME 211"
-        },
-        "14": {
-            "prereqs": [],
-            "ge_type": null,
-            "title": "General Chemistry for Physical Science & Engineering I",
-            "course_type": "Support",
-            "time": [
-                "2",
-                "Fall"
-            ],
-            "credits": 4.0,
-            "catalog": "CHEM 124"
-        },
-        "15": {
-            "prereqs": [
-                "MATH 244",
-                "PHYS 133"
-            ],
-            "ge_type": null,
-            "title": "Electric Circuits Laboratory",
-            "course_type": "Major",
-            "time": [
-                "2",
-                "Fall"
-            ],
-            "credits": 1.0,
-            "catalog": "EE 251"
-        },
-        "16": {
-            "prereqs": [
-                "MATH 244",
-                "PHYS 133"
-            ],
-            "ge_type": null,
-            "title": "Electric Circuit Theory",
-            "course_type": "Major",
-            "time": [
-                "2",
-                "Fall"
-            ],
-            "credits": 3.0,
-            "catalog": "EE 201"
-        },
-        "41": {
-            "prereqs": [],
-            "ge_type": "C3",
-            "title": "Music of the 60's",
-            "course_type": "General Ed",
-            "time": [
-                2,
-                "Winter"
-            ],
-            "credits": 4.0,
-            "catalog": "MU 229"
-        },
-        "43": {
-            "prereqs": [],
-            "ge_type": "C4",
-            "title": "Early Greek Philosophy through Plato",
-            "course_type": "Minor",
-            "time": [
-                "2",
-                "Spring"
-            ],
-            "credits": 4.0,
-            "catalog": "PHIL 309"
-        },
-        "44": {
-            "prereqs": [],
-            "ge_type": "C2",
-            "title": "Philosophical Classics: Knowledge and Reality",
-            "course_type": "Minor",
-            "time": [
-                "2",
-                "Winter"
-            ],
-            "credits": 4.0,
-            "catalog": "PHIL 230"
-        },
-        "45": {
-            "prereqs": [],
-            "ge_type": "D1",
-            "title": "GE",
-            "course_type": "General Ed",
-            "time": [
-                2,
-                "Spring"
-            ],
-            "credits": 4.0,
-            "catalog": "GE"
-        },
-        "46": {
-            "prereqs": [],
-            "ge_type": null,
-            "title": "Fundamentals of Computer Science I",
-            "course_type": "Major",
-            "time": [
-                "2",
-                "Fall"
-            ],
-            "credits": 4.0,
-            "catalog": "CPE 101"
-        },
-        "47": {
-            "prereqs": [
-                "CPE 101"
-            ],
-            "ge_type": null,
-            "title": "Fundamentals of Computer Science II",
-            "course_type": "Major",
-            "time": [
-                "2",
-                "Winter"
-            ],
-            "credits": 4.0,
-            "catalog": "CPE 102"
-        },
-        "48": {
-            "prereqs": [
-                "CPE 102"
-            ],
-            "ge_type": null,
-            "title": "Fundamentals of Computer Science III",
-            "course_type": "Major",
-            "time": [
-                "2",
-                "Spring"
-            ],
-            "credits": 4.0,
-            "catalog": "CPE 103"
-        },
-        "49": {
-            "prereqs": [],
-            "ge_type": "C1",
-            "title": "GE",
-            "course_type": "General Ed",
-            "time": [
-                2,
-                "Summer"
-            ],
-            "credits": 4.0,
-            "catalog": "GE"
-        },
-        "50": {
-            "prereqs": [
-                "CPE 102"
-            ],
-            "ge_type": null,
-            "title": "Introduction to Computer Organization",
-            "course_type": "Major",
-            "time": [
-                "2",
-                "Spring"
-            ],
-            "credits": 4.0,
-            "catalog": "CPE 225"
-        },
-        "51": {
-            "prereqs": [
-                "CPE 103"
-            ],
-            "ge_type": null,
-            "title": "Systems Programming",
-            "course_type": "Major",
-            "time": [
-                "3",
-                "Fall"
-            ],
-            "credits": 4.0,
-            "catalog": "CSC 357"
-        },
-        "52": {
-            "prereqs": [],
-            "ge_type": null,
-            "title": "Tech Elective",
-            "course_type": "Major",
-            "time": [
-                "4",
-                "Fall"
-            ],
-            "credits": 4.0,
-            "catalog": "CSC"
-        },
-        "53": {
-            "prereqs": [],
-            "ge_type": null,
-            "title": "Tech Elective",
-            "course_type": "Major",
-            "time": [
-                "4",
-                "Winter"
-            ],
-            "credits": 4.0,
-            "catalog": "CSC"
-        },
-        "54": {
-            "prereqs": [],
-            "ge_type": null,
-            "title": "Tech Elective",
-            "course_type": "Major",
-            "time": [
-                "4",
-                "Spring"
-            ],
-            "credits": 4.0,
-            "catalog": "CSC"
-        },
-        "56": {
-            "prereqs": [],
-            "ge_type": null,
-            "title": "Tech Elective",
-            "course_type": "Major",
-            "time": [
-                "4",
-                "Spring"
-            ],
-            "credits": 4.0,
-            "catalog": "CSC"
-        },
-        "57": {
-            "prereqs": [
-                "CPE 103"
-            ],
-            "ge_type": null,
-            "title": "Discrete Structures",
-            "course_type": "Major",
-            "time": [
-                3,
-                "Fall"
-            ],
-            "credits": 4.0,
-            "catalog": "CSC 348"
-        },
-        "58": {
-            "prereqs": [
-                "CPE 103"
-            ],
-            "ge_type": null,
-            "title": "Computer Architecture",
-            "course_type": "Major",
-            "time": [
-                3,
-                "Fall"
-            ],
-            "credits": 4.0,
-            "catalog": "CSC 315"
-        },
-        "59": {
-            "prereqs": [
-                "CSC 225",
-                "CSC 357"
-            ],
-            "ge_type": null,
-            "title": "Introduction to Operating Systems",
-            "course_type": "Major",
-            "time": [
-                3,
-                "Winter"
-            ],
-            "credits": 4.0,
-            "catalog": "CSC 453"
-        },
-        "60": {
-            "prereqs": [
-                "CSC 357"
-            ],
-            "ge_type": null,
-            "title": "Professional Responsibilities",
-            "course_type": "Major",
-            "time": [
-                3,
-                "Spring"
-            ],
-            "credits": 4.0,
-            "catalog": "CSC 300"
-        },
-        "61": {
-            "prereqs": [
-                "CSC 348"
-            ],
-            "ge_type": null,
-            "title": "Design and Analysis of Algorithms",
-            "course_type": "Major",
-            "time": [
-                "3",
-                "Winter"
-            ],
-            "credits": 4.0,
-            "catalog": "CSC 349"
-        },
-        "62": {
-            "prereqs": [
-                "CSC 349",
-                "CSC 357"
-            ],
-            "ge_type": null,
-            "title": "Programming Languages I",
-            "course_type": "Major",
-            "time": [
-                3,
-                "Spring"
-            ],
-            "credits": 4.0,
-            "catalog": "CSC 430"
-        },
-        "63": {
-            "prereqs": [
-                "CSC 430"
-            ],
-            "ge_type": null,
-            "title": "Programming Languages II",
-            "course_type": "Major",
-            "time": [
-                4,
-                "Fall"
-            ],
-            "credits": 4.0,
-            "catalog": "CSC 431"
-        },
-        "64": {
-            "prereqs": [
-                "CSC 348"
-            ],
-            "ge_type": null,
-            "title": "Theory of Computation I",
-            "course_type": "Major",
-            "time": [
-                "4",
-                "Fall"
-            ],
-            "credits": 4.0,
-            "catalog": "CSC 445"
-        },
-        "65": {
-            "prereqs": [
-                "CSC 307"
-            ],
-            "ge_type": null,
-            "title": "Senior Lab Project I",
-            "course_type": "Major",
-            "time": [
-                "4",
-                "Winter"
-            ],
-            "credits": 2.0,
-            "catalog": "CSC 491"
-        },
-        "66": {
-            "prereqs": [
-                "CSC 491"
-            ],
-            "ge_type": null,
-            "title": "CSC 492",
-            "course_type": "Major",
-            "time": [
-                "4",
-                "Spring"
-            ],
-            "credits": 2.0,
-            "catalog": "Senior Lab Project II"
-        },
-        "67": {
-            "prereqs": [],
-            "ge_type": "D2",
-            "title": "GE",
-            "course_type": "General Ed",
-            "time": [
-                2,
-                "Summer"
-            ],
-            "credits": 4.0,
-            "catalog": "GE"
-        },
-        "68": {
-            "prereqs": [],
-            "ge_type": "D3",
-            "title": "World History 1",
-            "course_type": "General Ed",
-            "time": [
-                "2",
-                "Winter"
-            ],
-            "credits": 4.0,
-            "catalog": "HIST 210"
-        },
-        "69": {
-            "prereqs": [],
-            "ge_type": null,
-            "title": "Metaphysics",
-            "course_type": "Minor",
-            "time": [
-                "3",
-                "Winter"
-            ],
-            "credits": 4.0,
-            "catalog": "PHIL 411"
-        },
-        "70": {
-            "prereqs": [],
-            "ge_type": null,
-            "title": "Biomedical Ethics",
-            "course_type": "Minor",
-            "time": [
-                "3",
-                "Spring"
-            ],
-            "credits": 4.0,
-            "catalog": "PHIL 339"
-        },
-        "71": {
-            "prereqs": [],
-            "ge_type": null,
-            "title": "Philosophy of Space, Time and Matter",
-            "course_type": "Minor",
-            "time": [
-                4,
-                "Winter"
-            ],
-            "credits": 4.0,
-            "catalog": "PHIL 421"
-        },
-        "72": {
-            "prereqs": [],
-            "ge_type": null,
-            "title": "Philosophy of Mind",
-            "course_type": "Minor",
-            "time": [
-                4,
-                "Fall"
-            ],
-            "credits": 4.0,
-            "catalog": "PHIL 422"
-        },
-        "73": {
-            "prereqs": [
-                "CSC 357",
-                "CSC 348"
-            ],
-            "ge_type": null,
-            "title": "Software Engineering I",
-            "course_type": "Major",
-            "time": [
-                "3",
-                "Winter"
-            ],
-            "credits": 4.0,
-            "catalog": "CSC 308"
-        },
-        "74": {
-            "prereqs": [
-                "CSC 308"
-            ],
-            "ge_type": null,
-            "title": "Software Engineering II",
-            "course_type": "Major",
-            "time": [
-                "3",
-                "Spring"
-            ],
-            "credits": 4.0,
-            "catalog": "CSC 309"
-        }
+    "0": {
+        "prereqs": [],
+        "ge_type": [
+            null
+        ],
+        "title": "Aerospace Fundamentals",
+        "course_type": "Free Elective",
+        "time": [
+            1,
+            "Fall"
+        ],
+        "credits": 2.0,
+        "catalog": "AERO 121",
+        "notes": null
+    },
+    "1": {
+        "prereqs": [],
+        "ge_type": [
+            "D4/E"
+        ],
+        "title": "Healthy Living",
+        "course_type": "General Ed",
+        "time": [
+            1,
+            "Fall"
+        ],
+        "credits": 4.0,
+        "catalog": "KINE 250",
+        "notes": null
+    },
+    "2": {
+        "prereqs": [],
+        "ge_type": [
+            null
+        ],
+        "title": "Introduction to Design & Manufacturing",
+        "course_type": "Free Elective",
+        "time": [
+            1,
+            "Fall"
+        ],
+        "credits": 4.0,
+        "catalog": "IME 144",
+        "notes": null
+    },
+    "3": {
+        "prereqs": [
+            ""
+        ],
+        "ge_type": [
+            null
+        ],
+        "title": "General Physics 1A",
+        "course_type": "Support",
+        "time": [
+            1,
+            "Fall"
+        ],
+        "credits": 4.0,
+        "catalog": "PHYS 141",
+        "notes": null
+    },
+    "4": {
+        "prereqs": [],
+        "ge_type": [
+            "A2"
+        ],
+        "title": "Public Speaking",
+        "course_type": "General Ed",
+        "time": [
+            1,
+            "Winter"
+        ],
+        "credits": 4.0,
+        "catalog": "COMS 101",
+        "notes": null
+    },
+    "5": {
+        "prereqs": [
+            "PHYS 141"
+        ],
+        "ge_type": [
+            "B4"
+        ],
+        "title": "General Physics III",
+        "course_type": "Support",
+        "time": [
+            1,
+            "Winter"
+        ],
+        "credits": 4.0,
+        "catalog": "PHYS 133",
+        "notes": null
+    },
+    "6": {
+        "prereqs": [
+            "MATH 142"
+        ],
+        "ge_type": [
+            "B6"
+        ],
+        "title": "Statistical Methods for Engineers",
+        "course_type": "Support",
+        "time": [
+            1,
+            "Winter"
+        ],
+        "credits": 4.0,
+        "catalog": "STAT 312",
+        "notes": null
+    },
+    "7": {
+        "prereqs": [],
+        "ge_type": [
+            "B2"
+        ],
+        "title": "Life Science for Engineers",
+        "course_type": "Support",
+        "time": [
+            1,
+            "Spring"
+        ],
+        "credits": 2.0,
+        "catalog": "BIO 213",
+        "notes": null
+    },
+    "8": {
+        "prereqs": [],
+        "ge_type": [
+            null
+        ],
+        "title": "Bioengineering Fundamentals",
+        "course_type": "Support",
+        "time": [
+            1,
+            "Spring"
+        ],
+        "credits": 2.0,
+        "catalog": "BMED 213",
+        "notes": null
+    },
+    "9": {
+        "prereqs": [],
+        "ge_type": [
+            "A3"
+        ],
+        "title": "Technical Writing for Engineers",
+        "course_type": "Support",
+        "time": [
+            1,
+            "Spring"
+        ],
+        "credits": 4.0,
+        "catalog": "ENGL 149",
+        "notes": null
+    },
+    "10": {
+        "prereqs": [
+            "MATH 143"
+        ],
+        "ge_type": [
+            null
+        ],
+        "title": "Linear Analysis I",
+        "course_type": "Support",
+        "time": [
+            1,
+            "Spring"
+        ],
+        "credits": 4.0,
+        "catalog": "MATH 244",
+        "notes": null
+    },
+    "11": {
+        "prereqs": [
+            "PHYS 141"
+        ],
+        "ge_type": [
+            null
+        ],
+        "title": "General Physics II",
+        "course_type": "Support",
+        "time": [
+            1,
+            "Spring"
+        ],
+        "credits": 4.0,
+        "catalog": "PHYS 132",
+        "notes": null
+    },
+    "12": {
+        "prereqs": [
+            "AERO 121",
+            "MATH 143",
+            "IME 144"
+        ],
+        "ge_type": [
+            null
+        ],
+        "title": "Introduction to Aerospace Design",
+        "course_type": "Free Elective",
+        "time": [
+            2,
+            "Fall"
+        ],
+        "credits": 2.0,
+        "catalog": "AERO 215",
+        "notes": null
+    },
+    "13": {
+        "prereqs": [
+            "MATH 241",
+            "PHYS 141"
+        ],
+        "ge_type": [
+            null
+        ],
+        "title": "Engineering Statics",
+        "course_type": "Free Elective",
+        "time": [
+            2,
+            "Fall"
+        ],
+        "credits": 3.0,
+        "catalog": "ME 211",
+        "notes": null
+    },
+    "14": {
+        "prereqs": [],
+        "ge_type": [
+            null
+        ],
+        "title": "General Chemistry for Physical Science & Engineering I",
+        "course_type": "Support",
+        "time": [
+            2,
+            "Fall"
+        ],
+        "credits": 4.0,
+        "catalog": "CHEM 124",
+        "notes": null
+    },
+    "15": {
+        "prereqs": [
+            "MATH 244",
+            "PHYS 133"
+        ],
+        "ge_type": [
+            null
+        ],
+        "title": "Electric Circuits Laboratory",
+        "course_type": "Major",
+        "time": [
+            2,
+            "Fall"
+        ],
+        "credits": 1.0,
+        "catalog": "EE 251",
+        "notes": null
+    },
+    "16": {
+        "prereqs": [
+            "MATH 244",
+            "PHYS 133"
+        ],
+        "ge_type": [
+            null
+        ],
+        "title": "Electric Circuit Theory",
+        "course_type": "Major",
+        "time": [
+            2,
+            "Fall"
+        ],
+        "credits": 3.0,
+        "catalog": "EE 201",
+        "notes": null
+    },
+    "41": {
+        "prereqs": [],
+        "ge_type": [
+            "C3"
+        ],
+        "title": "Music of the 60's",
+        "course_type": "General Ed",
+        "time": [
+            2,
+            "Winter"
+        ],
+        "credits": 4.0,
+        "catalog": "MU 229",
+        "notes": null
+    },
+    "43": {
+        "prereqs": [],
+        "ge_type": [
+            "C4"
+        ],
+        "title": "Early Greek Philosophy through Plato",
+        "course_type": "Minor",
+        "time": [
+            2,
+            "Spring"
+        ],
+        "credits": 4.0,
+        "catalog": "PHIL 309",
+        "notes": null
+    },
+    "44": {
+        "prereqs": [],
+        "ge_type": [
+            "C2"
+        ],
+        "title": "Philosophical Classics: Knowledge and Reality",
+        "course_type": "Minor",
+        "time": [
+            2,
+            "Winter"
+        ],
+        "credits": 4.0,
+        "catalog": "PHIL 230",
+        "notes": null
+    },
+    "45": {
+        "prereqs": [],
+        "ge_type": [
+            "D1"
+        ],
+        "title": "GE",
+        "course_type": "General Ed",
+        "time": [
+            2,
+            "Spring"
+        ],
+        "credits": 4.0,
+        "catalog": "GE",
+        "notes": null
+    },
+    "46": {
+        "prereqs": [],
+        "ge_type": [
+            null
+        ],
+        "title": "Fundamentals of Computer Science I",
+        "course_type": "Major",
+        "time": [
+            2,
+            "Fall"
+        ],
+        "credits": 4.0,
+        "catalog": "CPE 101",
+        "notes": null
+    },
+    "47": {
+        "prereqs": [
+            "CPE 101"
+        ],
+        "ge_type": [
+            null
+        ],
+        "title": "Fundamentals of Computer Science II",
+        "course_type": "Major",
+        "time": [
+            2,
+            "Winter"
+        ],
+        "credits": 4.0,
+        "catalog": "CPE 102",
+        "notes": null
+    },
+    "48": {
+        "prereqs": [
+            "CPE 102"
+        ],
+        "ge_type": [
+            null
+        ],
+        "title": "Fundamentals of Computer Science III",
+        "course_type": "Major",
+        "time": [
+            2,
+            "Spring"
+        ],
+        "credits": 4.0,
+        "catalog": "CPE 103",
+        "notes": null
+    },
+    "49": {
+        "prereqs": [],
+        "ge_type": [
+            "C1"
+        ],
+        "title": "GE",
+        "course_type": "General Ed",
+        "time": [
+            3,
+            "Spring"
+        ],
+        "credits": 4.0,
+        "catalog": "GE",
+        "notes": null
+    },
+    "50": {
+        "prereqs": [
+            "CPE 102"
+        ],
+        "ge_type": [
+            null
+        ],
+        "title": "Introduction to Computer Organization",
+        "course_type": "Major",
+        "time": [
+            2,
+            "Spring"
+        ],
+        "credits": 4.0,
+        "catalog": "CPE 225",
+        "notes": null
+    },
+    "51": {
+        "prereqs": [
+            "CPE 103"
+        ],
+        "ge_type": [
+            null
+        ],
+        "title": "Systems Programming",
+        "course_type": "Major",
+        "time": [
+            3,
+            "Fall"
+        ],
+        "credits": 4.0,
+        "catalog": "CSC 357",
+        "notes": null
+    },
+    "52": {
+        "prereqs": [
+            "CSC 357"
+        ],
+        "ge_type": [],
+        "title": "Applied Parallel Computing",
+        "course_type": "Major",
+        "time": [
+            4,
+            "Fall"
+        ],
+        "credits": 4.0,
+        "catalog": "CPE 419",
+        "notes": null
+    },
+    "53": {
+        "prereqs": [],
+        "ge_type": [
+            null
+        ],
+        "title": "Tech Elective",
+        "course_type": "Major",
+        "time": [
+            4,
+            "Winter"
+        ],
+        "credits": 4.0,
+        "catalog": "CSC",
+        "notes": null
+    },
+    "54": {
+        "prereqs": [],
+        "ge_type": [
+            null
+        ],
+        "title": "Tech Elective",
+        "course_type": "Major",
+        "time": [
+            4,
+            "Spring"
+        ],
+        "credits": 4.0,
+        "catalog": "CSC",
+        "notes": null
+    },
+    "56": {
+        "prereqs": [],
+        "ge_type": [
+            null
+        ],
+        "title": "Tech Elective",
+        "course_type": "Major",
+        "time": [
+            4,
+            "Spring"
+        ],
+        "credits": 4.0,
+        "catalog": "CSC",
+        "notes": null
+    },
+    "57": {
+        "prereqs": [
+            "CPE 103"
+        ],
+        "ge_type": [
+            null
+        ],
+        "title": "Discrete Structures",
+        "course_type": "Major",
+        "time": [
+            3,
+            "Fall"
+        ],
+        "credits": 4.0,
+        "catalog": "CSC 348",
+        "notes": null
+    },
+    "58": {
+        "prereqs": [
+            "CPE 103"
+        ],
+        "ge_type": [
+            null
+        ],
+        "title": "Computer Architecture",
+        "course_type": "Major",
+        "time": [
+            3,
+            "Fall"
+        ],
+        "credits": 4.0,
+        "catalog": "CSC 315",
+        "notes": null
+    },
+    "59": {
+        "prereqs": [
+            "CSC 225",
+            "CSC 357"
+        ],
+        "ge_type": [
+            null
+        ],
+        "title": "Introduction to Operating Systems",
+        "course_type": "Major",
+        "time": [
+            3,
+            "Winter"
+        ],
+        "credits": 4.0,
+        "catalog": "CSC 453",
+        "notes": null
+    },
+    "60": {
+        "prereqs": [
+            "CSC 357"
+        ],
+        "ge_type": [
+            null
+        ],
+        "title": "Professional Responsibilities",
+        "course_type": "Major",
+        "time": [
+            3,
+            "Spring"
+        ],
+        "credits": 4.0,
+        "catalog": "CSC 300",
+        "notes": null
+    },
+    "61": {
+        "prereqs": [
+            "CSC 348"
+        ],
+        "ge_type": [
+            null
+        ],
+        "title": "Design and Analysis of Algorithms",
+        "course_type": "Major",
+        "time": [
+            3,
+            "Winter"
+        ],
+        "credits": 4.0,
+        "catalog": "CSC 349",
+        "notes": null
+    },
+    "62": {
+        "prereqs": [
+            "CSC 349",
+            "CSC 357"
+        ],
+        "ge_type": [
+            null
+        ],
+        "title": "Programming Languages I",
+        "course_type": "Major",
+        "time": [
+            3,
+            "Spring"
+        ],
+        "credits": 4.0,
+        "catalog": "CSC 430",
+        "notes": null
+    },
+    "63": {
+        "prereqs": [
+            "CSC 430"
+        ],
+        "ge_type": [
+            null
+        ],
+        "title": "Programming Languages II",
+        "course_type": "Major",
+        "time": [
+            4,
+            "Fall"
+        ],
+        "credits": 4.0,
+        "catalog": "CSC 431",
+        "notes": null
+    },
+    "64": {
+        "prereqs": [
+            "CSC 348"
+        ],
+        "ge_type": [
+            null
+        ],
+        "title": "Theory of Computation I",
+        "course_type": "Major",
+        "time": [
+            4,
+            "Fall"
+        ],
+        "credits": 4.0,
+        "catalog": "CSC 445",
+        "notes": null
+    },
+    "65": {
+        "prereqs": [
+            "CSC 307"
+        ],
+        "ge_type": [
+            null
+        ],
+        "title": "Senior Lab Project I",
+        "course_type": "Major",
+        "time": [
+            4,
+            "Winter"
+        ],
+        "credits": 2.0,
+        "catalog": "CSC 491",
+        "notes": null
+    },
+    "66": {
+        "prereqs": [
+            "CSC 491"
+        ],
+        "ge_type": [
+            null
+        ],
+        "title": "CSC 492",
+        "course_type": "Major",
+        "time": [
+            4,
+            "Spring"
+        ],
+        "credits": 2.0,
+        "catalog": "Senior Lab Project II",
+        "notes": null
+    },
+    "67": {
+        "prereqs": [],
+        "ge_type": [
+            "D2"
+        ],
+        "title": "GE",
+        "course_type": "General Ed",
+        "time": [
+            4,
+            "Winter"
+        ],
+        "credits": 4.0,
+        "catalog": "GE",
+        "notes": null
+    },
+    "68": {
+        "prereqs": [],
+        "ge_type": [
+            "D3"
+        ],
+        "title": "World History 1",
+        "course_type": "General Ed",
+        "time": [
+            2,
+            "Winter"
+        ],
+        "credits": 4.0,
+        "catalog": "HIST 210",
+        "notes": null
+    },
+    "73": {
+        "prereqs": [
+            "CSC 357",
+            "CSC 348"
+        ],
+        "ge_type": [
+            null
+        ],
+        "title": "Software Engineering I",
+        "course_type": "Major",
+        "time": [
+            3,
+            "Winter"
+        ],
+        "credits": 4.0,
+        "catalog": "CSC 308",
+        "notes": null
+    },
+    "74": {
+        "prereqs": [
+            "CSC 308"
+        ],
+        "ge_type": [
+            null
+        ],
+        "title": "Software Engineering II",
+        "course_type": "Major",
+        "time": [
+            3,
+            "Spring"
+        ],
+        "credits": 4.0,
+        "catalog": "CSC 309",
+        "notes": null
     }
 }

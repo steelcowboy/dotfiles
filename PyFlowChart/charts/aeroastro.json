@@ -5,24 +5,30 @@
             "catalog": "AERO 121",
             "title": "Aerospace Fundamentals",
             "prereqs": [],
-            "ge_type": null,
+            "ge_type": [
+                null
+            ],
             "credits": 2.0,
             "time": [
-                "1",
+                1,
                 "Fall"
-            ]
+            ],
+            "notes": null
         },
         "1": {
             "course_type": "General Ed",
             "catalog": "KINE 250",
             "title": "Healthy Living",
             "prereqs": [],
-            "ge_type": "D4/E",
+            "ge_type": [
+                "D4/E"
+            ],
             "credits": 4.0,
             "time": [
-                "1",
+                1,
                 "Fall"
-            ]
+            ],
+            "notes": null
         },
         "2": {
             "course_type": "Support",
@@ -31,12 +37,15 @@
             "prereqs": [
                 ""
             ],
-            "ge_type": null,
+            "ge_type": [
+                null
+            ],
             "credits": 4.0,
             "time": [
-                "1",
+                1,
                 "Fall"
-            ]
+            ],
+            "notes": null
         },
         "3": {
             "course_type": "Support",
@@ -45,24 +54,30 @@
             "prereqs": [
                 ""
             ],
-            "ge_type": null,
+            "ge_type": [
+                null
+            ],
             "credits": 4.0,
             "time": [
-                "1",
+                1,
                 "Fall"
-            ]
+            ],
+            "notes": null
         },
         "4": {
             "course_type": "General Ed",
             "catalog": "COMS 101",
             "title": "Public Speaking",
             "prereqs": [],
-            "ge_type": "A2",
+            "ge_type": [
+                "A2"
+            ],
             "credits": 4.0,
             "time": [
-                "1",
+                1,
                 "Winter"
-            ]
+            ],
+            "notes": null
         },
         "5": {
             "course_type": "Support",
@@ -71,12 +86,15 @@
             "prereqs": [
                 "PHYS 141"
             ],
-            "ge_type": "B4",
+            "ge_type": [
+                "B4"
+            ],
             "credits": 4.0,
             "time": [
-                "1",
+                1,
                 "Winter"
-            ]
+            ],
+            "notes": null
         },
         "6": {
             "course_type": "Support",
@@ -85,48 +103,60 @@
             "prereqs": [
                 "MATH 142"
             ],
-            "ge_type": "B6",
+            "ge_type": [
+                "B6"
+            ],
             "credits": 4.0,
             "time": [
-                "1",
+                1,
                 "Winter"
-            ]
+            ],
+            "notes": null
         },
         "7": {
             "course_type": "Support",
             "catalog": "BIO 213",
             "title": "Life Science for Engineers",
             "prereqs": [],
-            "ge_type": "B2",
+            "ge_type": [
+                "B2"
+            ],
             "credits": 2.0,
             "time": [
-                "1",
+                1,
                 "Spring"
-            ]
+            ],
+            "notes": null
         },
         "8": {
             "course_type": "Support",
             "catalog": "BMED 213",
             "title": "Bioengineering Fundamentals",
             "prereqs": [],
-            "ge_type": null,
+            "ge_type": [
+                null
+            ],
             "credits": 2.0,
             "time": [
-                "1",
+                1,
                 "Spring"
-            ]
+            ],
+            "notes": null
         },
         "9": {
             "course_type": "Support",
             "catalog": "ENGL 149",
             "title": "Technical Writing for Engineers",
             "prereqs": [],
-            "ge_type": "A3",
+            "ge_type": [
+                "A3"
+            ],
             "credits": 4.0,
             "time": [
-                "1",
+                1,
                 "Spring"
-            ]
+            ],
+            "notes": null
         },
         "10": {
             "course_type": "Support",
@@ -135,12 +165,15 @@
             "prereqs": [
                 "MATH 143"
             ],
-            "ge_type": null,
+            "ge_type": [
+                null
+            ],
             "credits": 4.0,
             "time": [
                 1,
                 "Spring"
-            ]
+            ],
+            "notes": null
         },
         "11": {
             "course_type": "Support",
@@ -149,12 +182,15 @@
             "prereqs": [
                 "PHYS 141"
             ],
-            "ge_type": null,
+            "ge_type": [
+                null
+            ],
             "credits": 4.0,
             "time": [
-                "1",
+                1,
                 "Spring"
-            ]
+            ],
+            "notes": null
         },
         "12": {
             "course_type": "Major",
@@ -165,12 +201,15 @@
                 "MATH 143",
                 "IME 144"
             ],
-            "ge_type": null,
+            "ge_type": [
+                null
+            ],
             "credits": 2.0,
             "time": [
-                "2",
+                2,
                 "Fall"
-            ]
+            ],
+            "notes": null
         },
         "13": {
             "course_type": "Support",
@@ -180,24 +219,30 @@
                 "MATH 241",
                 "PHYS 141"
             ],
-            "ge_type": null,
+            "ge_type": [
+                null
+            ],
             "credits": 3.0,
             "time": [
-                "2",
+                2,
                 "Fall"
-            ]
+            ],
+            "notes": null
         },
         "14": {
             "course_type": "Support",
             "catalog": "CHEM 124",
             "title": "General Chemistry for Physical Science & Engineering I",
             "prereqs": [],
-            "ge_type": null,
+            "ge_type": [
+                null
+            ],
             "credits": 4.0,
             "time": [
-                "2",
+                2,
                 "Fall"
-            ]
+            ],
+            "notes": null
         },
         "15": {
             "course_type": "Major",
@@ -207,12 +252,15 @@
                 "MATH 244",
                 "PHYS 133"
             ],
-            "ge_type": null,
+            "ge_type": [
+                null
+            ],
             "credits": 1.0,
             "time": [
-                "2",
+                2,
                 "Fall"
-            ]
+            ],
+            "notes": null
         },
         "16": {
             "course_type": "Major",
@@ -222,12 +270,15 @@
                 "MATH 244",
                 "PHYS 133"
             ],
-            "ge_type": null,
+            "ge_type": [
+                null
+            ],
             "credits": 3.0,
             "time": [
-                "2",
+                2,
                 "Fall"
-            ]
+            ],
+            "notes": null
         },
         "17": {
             "course_type": "Support",
@@ -236,12 +287,15 @@
             "prereqs": [
                 "CHEM 124"
             ],
-            "ge_type": null,
+            "ge_type": [
+                null
+            ],
             "credits": 3.0,
             "time": [
-                "2",
+                2,
                 "Winter"
-            ]
+            ],
+            "notes": null
         },
         "18": {
             "course_type": "Support",
@@ -251,12 +305,15 @@
                 "MATH 241",
                 "ME 211"
             ],
-            "ge_type": null,
+            "ge_type": [
+                null
+            ],
             "credits": 3.0,
             "time": [
-                "2",
+                2,
                 "Winter"
-            ]
+            ],
+            "notes": null
         },
         "19": {
             "course_type": "Major",
@@ -265,12 +322,15 @@
             "prereqs": [
                 "ME 211"
             ],
-            "ge_type": null,
+            "ge_type": [
+                null
+            ],
             "credits": 3.0,
             "time": [
-                "2",
+                2,
                 "Winter"
-            ]
+            ],
+            "notes": null
         },
         "20": {
             "course_type": "Major",
@@ -279,12 +339,15 @@
             "prereqs": [
                 "ME 211; Coreq: AERO 300"
             ],
-            "ge_type": null,
+            "ge_type": [
+                null
+            ],
             "credits": 4.0,
             "time": [
-                "2",
+                2,
                 "Spring"
-            ]
+            ],
+            "notes": null
         },
         "21": {
             "course_type": "Major",
@@ -296,12 +359,15 @@
                 "ME 211",
                 "PHYS 133"
             ],
-            "ge_type": null,
+            "ge_type": [
+                null
+            ],
             "credits": 5.0,
             "time": [
-                "2",
+                2,
                 "Spring"
-            ]
+            ],
+            "notes": null
         },
         "22": {
             "course_type": "Major",
@@ -310,12 +376,15 @@
             "prereqs": [
                 "CE 204"
             ],
-            "ge_type": null,
+            "ge_type": [
+                null
+            ],
             "credits": 2.0,
             "time": [
-                "2",
+                2,
                 "Spring"
-            ]
+            ],
+            "notes": null
         },
         "23": {
             "course_type": "Major",
@@ -324,12 +393,15 @@
             "prereqs": [
                 "AERO 301"
             ],
-            "ge_type": null,
+            "ge_type": [
+                null
+            ],
             "credits": 4.0,
             "time": [
-                "3",
+                3,
                 "Fall"
-            ]
+            ],
+            "notes": null
         },
         "24": {
             "course_type": "Concentration",
@@ -339,12 +411,15 @@
                 "AERO 300",
                 "ME 212"
             ],
-            "ge_type": null,
+            "ge_type": [
+                null
+            ],
             "credits": 4.0,
             "time": [
-                "3",
+                3,
                 "Fall"
-            ]
+            ],
+            "notes": null
         },
         "25": {
             "course_type": "Major",
@@ -354,12 +429,15 @@
                 "AERO 300",
                 "ME 212"
             ],
-            "ge_type": null,
+            "ge_type": [
+                null
+            ],
             "credits": 4.0,
             "time": [
-                "3",
+                3,
                 "Fall"
-            ]
+            ],
+            "notes": null
         },
         "26": {
             "course_type": "Major",
@@ -368,12 +446,15 @@
             "prereqs": [
                 "AERO 302"
             ],
-            "ge_type": null,
+            "ge_type": [
+                null
+            ],
             "credits": 4.0,
             "time": [
-                "3",
+                3,
                 "Winter"
-            ]
+            ],
+            "notes": null
         },
         "27": {
             "course_type": "Major",
@@ -383,12 +464,15 @@
                 "ENGL 149",
                 "AERO 301"
             ],
-            "ge_type": null,
+            "ge_type": [
+                null
+            ],
             "credits": 2.0,
             "time": [
-                "3",
+                3,
                 "Winter"
-            ]
+            ],
+            "notes": null
         },
         "28": {
             "course_type": "Major",
@@ -399,12 +483,15 @@
                 "CE 207",
                 "ME 212"
             ],
-            "ge_type": null,
+            "ge_type": [
+                null
+            ],
             "credits": 4.0,
             "time": [
-                "3",
+                3,
                 "Winter"
-            ]
+            ],
+            "notes": null
         },
         "29": {
             "course_type": "Major",
@@ -414,12 +501,15 @@
                 "AERO 300",
                 "AERO 301"
             ],
-            "ge_type": null,
+            "ge_type": [
+                null
+            ],
             "credits": 4.0,
             "time": [
-                "3",
+                3,
                 "Winter"
-            ]
+            ],
+            "notes": null
         },
         "30": {
             "course_type": "Concentration",
@@ -429,12 +519,15 @@
                 "AERO 320",
                 "AERO 351"
             ],
-            "ge_type": null,
+            "ge_type": [
+                null
+            ],
             "credits": 4.0,
             "time": [
-                "3",
+                3,
                 "Spring"
-            ]
+            ],
+            "notes": null
         },
         "31": {
             "course_type": "Concentration",
@@ -446,12 +539,15 @@
                 "EE 251",
                 "AERO 353"
             ],
-            "ge_type": null,
+            "ge_type": [
+                null
+            ],
             "credits": 4.0,
             "time": [
-                "3",
+                3,
                 "Spring"
-            ]
+            ],
+            "notes": null
         },
         "32": {
             "course_type": "Major",
@@ -460,12 +556,15 @@
             "prereqs": [
                 "AERO 331"
             ],
-            "ge_type": null,
+            "ge_type": [
+                null
+            ],
             "credits": 4.0,
             "time": [
-                "3",
+                3,
                 "Spring"
-            ]
+            ],
+            "notes": null
         },
         "33": {
             "course_type": "Concentration",
@@ -475,12 +574,15 @@
                 "ENGL 149",
                 "AERO 353"
             ],
-            "ge_type": null,
+            "ge_type": [
+                null
+            ],
             "credits": 2.0,
             "time": [
-                "3",
+                3,
                 "Spring"
-            ]
+            ],
+            "notes": null
         },
         "34": {
             "course_type": "Concentration",
@@ -491,12 +593,15 @@
                 "AERO 353",
                 "CHEM 124"
             ],
-            "ge_type": null,
+            "ge_type": [
+                null
+            ],
             "credits": 5.0,
             "time": [
-                "4",
+                4,
                 "Fall"
-            ]
+            ],
+            "notes": null
         },
         "35": {
             "course_type": "Concentration",
@@ -505,12 +610,15 @@
             "prereqs": [
                 ""
             ],
-            "ge_type": null,
+            "ge_type": [
+                null
+            ],
             "credits": 4.0,
             "time": [
-                "4",
+                4,
                 "Fall"
-            ]
+            ],
+            "notes": null
         },
         "36": {
             "course_type": "Major",
@@ -520,12 +628,15 @@
                 "AERO 331",
                 "AERO 431"
             ],
-            "ge_type": null,
+            "ge_type": [
+                null
+            ],
             "credits": 1.0,
             "time": [
-                "4",
+                4,
                 "Fall"
-            ]
+            ],
+            "notes": null
         },
         "37": {
             "course_type": "Major",
@@ -534,12 +645,15 @@
             "prereqs": [
                 ""
             ],
-            "ge_type": null,
+            "ge_type": [
+                null
+            ],
             "credits": 1.0,
             "time": [
-                "4",
+                4,
                 "Fall"
-            ]
+            ],
+            "notes": null
         },
         "38": {
             "course_type": "Concentration",
@@ -548,12 +662,15 @@
             "prereqs": [
                 "AERO 447"
             ],
-            "ge_type": null,
+            "ge_type": [
+                null
+            ],
             "credits": 3.0,
             "time": [
-                "4",
+                4,
                 "Winter"
-            ]
+            ],
+            "notes": null
         },
         "39": {
             "course_type": "Major",
@@ -565,12 +682,15 @@
                 "AERO 320",
                 "431"
             ],
-            "ge_type": null,
+            "ge_type": [
+                null
+            ],
             "credits": 1.0,
             "time": [
-                "4",
+                4,
                 "Winter"
-            ]
+            ],
+            "notes": null
         },
         "40": {
             "course_type": "Concentration",
@@ -579,24 +699,30 @@
             "prereqs": [
                 ""
             ],
-            "ge_type": null,
+            "ge_type": [
+                null
+            ],
             "credits": 3.0,
             "time": [
-                "4",
+                4,
                 "Spring"
-            ]
+            ],
+            "notes": null
         },
         "41": {
             "course_type": "General Ed",
             "catalog": "GE",
             "title": "GE",
             "prereqs": [],
-            "ge_type": null,
+            "ge_type": [
+                null
+            ],
             "credits": 4.0,
             "time": [
-                "2",
+                2,
                 "Summer"
-            ]
+            ],
+            "notes": null
         },
         "42": {
             "course_type": "General Ed",
@@ -605,12 +731,15 @@
             "prereqs": [
                 ""
             ],
-            "ge_type": null,
+            "ge_type": [
+                null
+            ],
             "credits": 4.0,
             "time": [
-                "4",
+                4,
                 "Fall"
-            ]
+            ],
+            "notes": null
         },
         "43": {
             "course_type": "General Ed",
@@ -619,12 +748,15 @@
             "prereqs": [
                 ""
             ],
-            "ge_type": null,
+            "ge_type": [
+                null
+            ],
             "credits": 4.0,
             "time": [
-                "4",
+                4,
                 "Winter"
-            ]
+            ],
+            "notes": null
         },
         "44": {
             "course_type": "General Ed",
@@ -633,12 +765,15 @@
             "prereqs": [
                 ""
             ],
-            "ge_type": null,
+            "ge_type": [
+                null
+            ],
             "credits": 4.0,
             "time": [
-                "4",
+                4,
                 "Spring"
-            ]
+            ],
+            "notes": null
         },
         "45": {
             "course_type": "General Ed",
@@ -647,24 +782,30 @@
             "prereqs": [
                 ""
             ],
-            "ge_type": null,
+            "ge_type": [
+                null
+            ],
             "credits": 4.0,
             "time": [
-                "4",
+                4,
                 "Spring"
-            ]
+            ],
+            "notes": null
         },
         "46": {
             "course_type": "Minor",
             "catalog": "CPE 101",
             "title": "Fundamentals of Computer Science I",
             "prereqs": [],
-            "ge_type": null,
+            "ge_type": [
+                null
+            ],
             "credits": 4.0,
             "time": [
-                "2",
+                2,
                 "Fall"
-            ]
+            ],
+            "notes": null
         },
         "47": {
             "course_type": "Minor",
@@ -673,12 +814,15 @@
             "prereqs": [
                 "CPE 101"
             ],
-            "ge_type": null,
+            "ge_type": [
+                null
+            ],
             "credits": 4.0,
             "time": [
-                "2",
+                2,
                 "Winter"
-            ]
+            ],
+            "notes": null
         },
         "48": {
             "course_type": "Minor",
@@ -687,24 +831,30 @@
             "prereqs": [
                 "CPE 102"
             ],
-            "ge_type": null,
+            "ge_type": [
+                null
+            ],
             "credits": 4.0,
             "time": [
-                "2",
+                2,
                 "Spring"
-            ]
+            ],
+            "notes": null
         },
         "49": {
             "course_type": "General Ed",
             "catalog": "GE",
             "title": "GE",
             "prereqs": [],
-            "ge_type": null,
+            "ge_type": [
+                null
+            ],
             "credits": 4.0,
             "time": [
-                "2",
+                2,
                 "Summer"
-            ]
+            ],
+            "notes": null
         }
     }
 }
