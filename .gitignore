@@ -4,3 +4,4 @@ mpd/pid
 mpd/state*
 mpd/sticker.sql
 nvim/plugged
+nvim/.netrwhist

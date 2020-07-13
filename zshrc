@@ -1,6 +1,6 @@
 # Virtualenv Wrapper
 export WORKON_HOME=~/.virtualenvs
-source /usr/local/bin/virtualenvwrapper.sh
+#source /usr/local/bin/virtualenvwrapper.sh
 
 # nvm
 export NVM_DIR="$HOME/.nvm"
@@ -13,8 +13,12 @@ export NVM_DIR="$HOME/.nvm"
 # If you come from bash you might have to change your $PATH.
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
-# Source autojump
-. /usr/share/autojump/autojump.zsh 
+# Initialize fasd 
+eval "$(fasd --init auto)"
+alias j='fasd_cd -d'     # cd, same functionality as j in autojump
+alias jj='fasd_cd -d -i' # cd with interactive selection
+alias v='f -e vim' # quick opening files with vim
+alias c='f -e cat' # quick displaying files with cat
 
 # Source OS release
 . /etc/os-release
@@ -23,7 +27,7 @@ export NVM_DIR="$HOME/.nvm"
 export ZSH=/home/steelcowboy/.oh-my-zsh
 
 # Extra PATH
-export PATH="/usr/lib/ccache/bin:$PATH:$HOME/.cargo/bin:$HOME/go/bin:$(ruby -e 'puts Gem.user_dir')/bin"
+export PATH="/usr/lib/ccache/bin:$PATH:$HOME/.cargo/bin:$HOME/go/bin:/bin"
 export GOPATH="$HOME/projects/original/go"
 
 # Set name of the theme to load. Optionally, if you set this to "random"
