@@ -10,6 +10,7 @@ call plug#begin()
 Plug 'scrooloose/nerdcommenter'
 Plug 'terryma/vim-multiple-cursors'
 Plug 'steelcowboy/vimwiki'
+Plug 'tpope/vim-sleuth'
 
 Plug 'octol/vim-cpp-enhanced-highlight'
 Plug 'hdima/python-syntax'
