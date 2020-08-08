@@ -1,0 +1,130 @@
+{
+    "editor.tabSize": 2,
+    "vim.enableNeovim": true,
+    "vim.neovimPath": "/usr/bin/nvim",
+    "vim.visualModeKeyBindingsNonRecursive": [
+        // Movement
+        {
+            "before": ["n"],
+            "after": ["h"],
+        },
+        {
+            "before": ["e"],
+            "after": ["j"],
+        },
+        {
+            "before": ["i"],
+            "after": ["k"],
+        },
+        {
+            "before": ["o"],
+            "after": ["l"],
+        },
+
+        // Cut/copy/paste
+        {
+            "before": ["c"],
+            "after": ["y"],
+        },
+        {
+            "before": ["v"],
+            "after": ["p"],
+        },
+        {
+            "before": ["C"],
+            "after": ["yy"],
+        },
+        {
+            "before": ["V"],
+            "after": ["P"],
+        },
+    ],
+    "vim.normalModeKeyBindings": [
+        // Movement
+        {
+            "before": ["n"],
+            "after": ["h"],
+        },
+        {
+            "before": ["e"],
+            "after": ["j"],
+        },
+        {
+            "before": ["i"],
+            "after": ["k"],
+        },
+        {
+            "before": ["o"],
+            "after": ["l"],
+        },
+
+        // Change modes
+        {
+            "before": ["s"],
+            "after": ["i"],
+        },
+        {
+            "before": ["S"],
+            "after": ["I"],
+        },
+        {
+            "before": ["t"],
+            "after": ["a"],
+        },
+        {
+            "before": ["T"],
+            "after": ["A"],
+        },
+
+        // Cut/copy/paste
+        {
+            "before": ["c"],
+            "after": ["y"],
+        },
+        {
+            "before": ["v"],
+            "after": ["p"],
+        },
+        {
+            "before": ["C"],
+            "after": ["yy"],
+        },
+        {
+            "before": ["V"],
+            "after": ["P"],
+        },
+
+        // Selection
+        {
+            "before": ["a"],
+            "after": ["v"],
+        },
+        {
+            "before": ["A"],
+            "after": ["V"],
+        },
+
+        // Undo/redo
+        {
+            "before": ["z"],
+            "after": ["u"],
+        },
+        {
+            "before": ["Z"],
+            "after": ["<C-R>"],
+        },
+
+    ],
+    "python.venvPath": "~/.virtualenvs",
+    "terminal.integrated.rendererType": "dom",
+    "git.enableSmartCommit": true,
+    "editor.fontSize": 16,
+    "terminal.integrated.fontFamily": "monospace",
+    "editor.fontFamily": "'Hack', 'Droid Sans Mono', 'monospace', monospace, 'Droid Sans Fallback'",
+    "keyboard.dispatch": "keyCode",
+    "window.titleBarStyle": "custom",
+    "liveServer.settings.donotShowInfoMsg": true,
+    "[html]": {
+        "editor.defaultFormatter": "HookyQR.beautify"
+    }
+}
