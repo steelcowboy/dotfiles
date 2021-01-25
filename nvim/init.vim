@@ -39,6 +39,14 @@ Plug 'Valloric/YouCompleteMe', { 'do': function('BuildYCM') }
 
 call plug#end()
 
+function! TrimWhitespace()
+  let l:save = winsaveview()
+  keeppatterns %s/\s\+$//e
+  call winrestview(l:save)
+endfunction
+
+autocmd BufWritePre * :call TrimWhitespace()
+
 "nunmap o
 nnoremap h o
 nnoremap H O

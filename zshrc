@@ -13,7 +13,7 @@ export NVM_DIR="$HOME/.nvm"
 # If you come from bash you might have to change your $PATH.
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
-# Initialize fasd 
+# Initialize fasd
 eval "$(fasd --init auto)"
 alias j='fasd_cd -d'     # cd, same functionality as j in autojump
 alias jj='fasd_cd -d -i' # cd with interactive selection
@@ -27,8 +27,8 @@ alias c='f -e cat' # quick displaying files with cat
 export ZSH=/home/steelcowboy/.oh-my-zsh
 
 # Extra PATH
-export PATH="/usr/lib/ccache/bin:$PATH:$HOME/.cargo/bin:$HOME/go/bin:/bin"
-export GOPATH="$HOME/projects/original/go"
+export GOPATH="$HOME/.go"
+export PATH="/usr/lib/ccache/bin:$PATH:$HOME/.cargo/bin:$GOPATH/bin:/bin"
 
 # Set name of the theme to load. Optionally, if you set this to "random"
 # it'll load a random theme each time that oh-my-zsh is loaded.

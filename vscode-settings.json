@@ -1,5 +1,5 @@
 {
-    "editor.tabSize": 2,
+    "editor.tabSize": 4,
     "vim.enableNeovim": true,
     "vim.neovimPath": "/usr/bin/nvim",
     "vim.visualModeKeyBindingsNonRecursive": [
@@ -115,7 +115,6 @@
         },
 
     ],
-    "python.venvPath": "~/.virtualenvs",
     "terminal.integrated.rendererType": "dom",
     "git.enableSmartCommit": true,
     "editor.fontSize": 16,
@@ -123,8 +122,8 @@
     "editor.fontFamily": "'Hack', 'Droid Sans Mono', 'monospace', monospace, 'Droid Sans Fallback'",
     "keyboard.dispatch": "keyCode",
     "window.titleBarStyle": "custom",
-    "liveServer.settings.donotShowInfoMsg": true,
     "[html]": {
         "editor.defaultFormatter": "HookyQR.beautify"
-    }
+    },
+    "go.formatTool": "goimports"
 }
